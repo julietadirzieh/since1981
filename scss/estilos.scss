@@ -1,0 +1,357 @@
+/*variables*/
+@import "colores";
+@import "general";
+@import "header";
+@import "bloquefinal";
+@import "footer";
+
+h1{ 	
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	padding: 0 10 10 10;
+	margin-top: 0px;
+	animation-name:subtitulo;
+	animation-duration: 2s;
+	font-style: $title-size;
+	text-align: center;
+}
+
+/*esto es para que los títulos de las páginas aparezcan con un efecto*/
+@keyframes subtitulo{
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+h2{ 	
+	font-weight: bold;
+	line-height: 40px;
+	font-style: $subtitle-size;
+} 
+
+/*esto es para los enlaces que quiero en azul*/
+a.azul{
+	color: #1e3752 !important;
+	text-decoration: none;
+	text-transform: none;
+	line-height: 5px;
+	font-size: 1em;
+}
+
+a.azul:hover{
+	color:white !important;
+}
+
+/*esto es para el enlace del "index" para reservar el combo*/
+a.subrayado{
+	@extend a.azul;
+	text-decoration: underline;
+}
+
+/*esto es para establecer un máximo de ancho al carrusel en el "index"*/
+.carrusel{
+	width: 80%;
+	margin: 10px auto 20px auto;
+}
+
+/*esto es lo genérico para las secciones*/
+section{
+	display: flex;
+	margin-top: 10px;
+	line-height: 25px;
+	justify-content: space-around;
+	width:100%;
+}
+
+section article{
+	flex-wrap: wrap;
+	text-align: center;
+	padding: 10px;
+}
+
+
+/*esto es grids para el html de "productos"*/
+#grilla{
+	display:grid;
+	grid-template-areas: 
+		"telabatista"
+		"telapoplin"
+		"camisas";
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr, 1fr, 1/2fr;
+	grid-row-gap: 10px;
+	grid-column-gap:10px;
+	width: 90%;
+	max-width: 1000px;
+}
+
+.telabatista{
+	grid-area: telabatista;
+	margin: 0px 65px;
+	width: 110%;
+	justify-self: space-around;
+	align-items: center;
+}
+
+.telapoplin{
+	grid-area: telapoplin;
+	margin: 0px 65px;
+	width: 110%;
+	justify-self: space-around;
+	align-items: center;
+}
+
+.camisas{
+	grid-area: camisas;
+	margin: 0px;
+	justify-self: center;
+}
+
+/*estos ids son para generar enlaces internos dentro del html de "productos"*/
+#telasxmayor, #camisasxmayor{ 	
+	text-decoration: underline;
+	font-size: 1.8em;
+	padding:20px;
+	text-align: center;
+	color: #1e3752;
+	text-transform: none;
+} 
+
+/*esta es para las imágenes de "productos"*/
+.imagen{
+	max-width: 100%;
+	width: 300px;
+	height: 300px;
+	padding: 10px;
+}
+
+/*esto es lo genérico para el contenido principal en html "nosotros"*/
+.contenedor {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 10px;
+	line-height: 25px;
+
+	.tarjeta {
+		background-color: #c4c3c3;
+		border-radius: 15px;
+		padding: 20px;
+		align-items: center;
+		position: relative;
+		margin-bottom: 30px; 
+		display: flex;
+		overflow: auto;
+}
+}
+
+.tarjeta__img {
+	width: 300px;
+	height: 200px;
+	padding: 10px;
+	max-width: 100%;
+}
+
+.tarjeta__video {
+	width: 300px;
+	height: 200px;
+	padding: 10px;
+	max-width: 100%;
+}
+
+.tarjeta__parrafo {
+	line-height: 40px;
+	margin: 30px;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.tarjeta__parrafo--titulo {
+	@extend.tarjeta__parrafo;
+	font-size: $subtitle-size;
+	font-style: bold;
+}
+
+@mixin font-style($font-size) {
+	color: $color-azul;
+	text-align: center;
+	margin-top: 20px;
+	font-size: $font-size;
+}
+/*esta es la imagen del html "nosotros"*/
+.imgnosotros{
+	padding: 0px 50px 00px 50px;
+	width: 400px;
+	height: 300px;
+}
+
+
+/*define la lista del html de "preguntasfrecuentes"*/
+ul.preguntas{ 
+	list-style: square;
+	margin: 15px 0px 0px 15px;
+}
+
+ul li.preguntas{
+	font-size: 1.2em;
+	line-height: 60px;
+}
+
+/*para diferenciar las respuestas en el html de "preguntas frecuentes"*/
+.italic{ 	
+	font-style: italic;
+} 
+
+/*para que las imágenes se achiquen según las pantallas en "preguntas frecuentes"*/
+.imagenpaleta{
+	width: 300px;
+	height: 300px;
+	padding: 10px;
+	max-width:100%;
+}
+
+@media screen and (min-width:480px) and (max-width:780px){
+	.imagenpaleta{
+		width: 200px;
+		height: 200px;
+		padding: 8px;
+	}
+}
+@media screen and (max-width: 480px)
+{
+	.imagenpaleta{
+		width: 150px;
+		height: 150px;
+		padding: 5px;
+	}
+}
+
+/*caracteristicas del formulario del html "contacto"*/
+form{
+	margin: 0 auto;
+	width: 400px;
+	padding: 1em;
+	border: 1px solid #CCC;
+	border-radius: 1em;
+}
+
+/*define las caracteristicas de la tabla de bs*/
+div table{	
+	font-size: 1em;
+	color:#1e3752;
+} 
+
+/*usé mapas y each para darle color a los botones*/
+$contactos: (
+	enviar: $color-azul,
+	limpiar: #2c5178
+);
+
+@each $contacto, $color in $contactos{ 
+.contactos--#{$contacto} {
+	background-color: $color;
+}
+}
+
+/*para que al pasar el mouse, se vea más grande el espacio para escribir en form*/
+.agrandar{
+	width: 150px;
+	transition: all 1s;
+}
+
+.agrandar:focus{
+	width: 200px;
+	font-size: 1.2rem;
+}
+
+/*para que al pasar el mouse por el botón, se agrande el ancho del boton*/
+input.boton{
+	width: 140px;
+	transition: width 0s;
+	color: $color-gris;
+}
+
+input.boton:hover{
+	width: 200px;
+}
+
+
+
+
+/*para que sea responsive*/
+@media screen and (min-width:480px) and (max-width:780px){
+	.contenedor {
+		width: 80%;
+		margin-top: 6px;
+		line-height: 25px;
+	
+		.tarjeta {
+			padding: 10px;
+			margin-bottom: 20px; 
+	}
+	.tarjeta__img {
+		width: 200px;
+		height: 150px;
+		padding: 10px;
+	}
+	
+	.tarjeta__video {
+		width: 200px;
+		height: 150px;
+		padding: 10px;
+	}
+	.tarjeta__parrafo {
+		line-height: 26px;
+		margin: 20px;
+		font-size: 1em;
+	}
+}
+}
+
+
+
+@media screen and (max-width: 480px)
+{
+	h1 {
+		font-size: 1.8em;
+	}
+
+	#telasxmayor, #camisasxmayor{ 	
+		font-size: 1.5em;
+	} 
+
+	a.azul{
+		text-decoration: underline;
+	}
+
+	.contenedor {
+		width: 100%;
+		height: auto;
+		margin: 0px;
+		line-height: 25px;
+	
+		.tarjeta {
+			padding: 7px;
+			margin-bottom: 10px; 	
+			flex-wrap: wrap;
+			align-content: center;
+			justify-content: center;
+	}
+	
+	.tarjeta__img {
+		width: 150px;
+		height: 100px;
+		padding: 8px;
+	}
+	
+	.tarjeta__video {
+		width: 150px;
+		height: 100px;
+		padding: 8px;
+	}
+
+	.tarjeta__parrafo {
+		line-height: 13px;
+		margin: 10px;
+		font-size: 0.8em;
+	}
+}
+}

@@ -1,0 +1,520 @@
+@charset "UTF-8";
+/*variables*/
+/*variables de colores*/
+/*caracteristicas generales*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: 400;
+  color: #1e3752;
+  background-color: #d9d9d9;
+}
+
+/*este es el bloque del header*/
+/*esto es el header, para que quede siempre arriba*/
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 18%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1e3752), to(#2c5178));
+  background: linear-gradient(to bottom, #1e3752, #2c5178);
+  z-index: 1001;
+}
+
+nav {
+  padding: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*esto es el menú*/
+a.enlaces, a.fondoAzul {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #d9d9d9 !important;
+  font-size: 1em;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: 400;
+}
+
+/*esto es para que al pasar el mouse, cambie el color el fondo*/
+a.enlaces:hover, a.fondoAzul:hover {
+  background-color: #2c5178;
+  -webkit-transition: background-color 0s;
+  transition: background-color 0s;
+}
+
+/*esto es para el titulo de la marca*/
+a.h1 {
+  font-size: 2.2em;
+  color: #d9d9d9 !important;
+}
+
+/*esto es para que cuando se abra la solapa del submenu, tenga el mismo fondo que el menu*/
+.fondoAzul {
+  text-transform: uppercase;
+  font-size: 1em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1e3752), to(#2c5178));
+  background: linear-gradient(to bottom, #1e3752, #2c5178);
+  margin-top: -9px;
+  margin-bottom: -9px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*esto es el bloque final*/
+.contieneinfo {
+  background: -webkit-gradient(linear, left top, left bottom, from(#d9d9d9), to(#f8f8f8));
+  background: linear-gradient(to bottom, #d9d9d9, #f8f8f8);
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 33%;
+}
+
+.final:after {
+  display: table;
+  clear: both;
+}
+
+.contieneinfo__texto, .contieneinfo__texto--inline, .contieneinfo__texto--titulo {
+  color: #1e3752;
+  text-transform: none;
+  text-decoration: none;
+  line-height: 15px;
+  padding: 0px;
+}
+
+.contieneinfo__texto--inline {
+  text-decoration: none;
+  line-height: 30px;
+}
+
+.contieneinfo__texto--titulo {
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.icono {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 780px) {
+  .icono {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .icono {
+    width: 10px;
+    height: 10px;
+    margin: 2px;
+  }
+  .contieneinfo {
+    width: auto;
+    height: 10%;
+  }
+  .column {
+    width: 100%;
+    height: 10%;
+  }
+  .contieneinfo__texto, .contieneinfo__texto--inline, .contieneinfo__texto--titulo {
+    font-size: 0.8em;
+    line-height: 7px;
+  }
+  .contieneinfo__texto--inline {
+    line-height: 10px;
+  }
+  .contieneinfo__texto--titulo {
+    font-size: 1em;
+    line-height: 12px;
+  }
+}
+
+/*esto es el footer*/
+footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1e3752), to(#2c5178));
+  background: linear-gradient(to bottom, #1e3752, #2c5178);
+  color: #d9d9d9;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 0 10 10 10;
+  margin-top: 0px;
+  -webkit-animation-name: subtitulo;
+          animation-name: subtitulo;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  font-style: 2.2em;
+  text-align: center;
+}
+
+/*esto es para que los títulos de las páginas aparezcan con un efecto*/
+@-webkit-keyframes subtitulo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes subtitulo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h2 {
+  font-weight: bold;
+  line-height: 40px;
+  font-style: 1.3em;
+}
+
+/*esto es para los enlaces que quiero en azul*/
+a.azul, a.subrayado {
+  color: #1e3752 !important;
+  text-decoration: none;
+  text-transform: none;
+  line-height: 5px;
+  font-size: 1em;
+}
+
+a.azul:hover, a.subrayado:hover {
+  color: white !important;
+}
+
+/*esto es para el enlace del "index" para reservar el combo*/
+a.subrayado {
+  text-decoration: underline;
+}
+
+/*esto es para establecer un máximo de ancho al carrusel en el "index"*/
+.carrusel {
+  width: 80%;
+  margin: 10px auto 20px auto;
+}
+
+/*esto es lo genérico para las secciones*/
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  line-height: 25px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+section article {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  padding: 10px;
+}
+
+/*esto es grids para el html de "productos"*/
+#grilla {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "telabatista" "telapoplin" "camisas";
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr, 1fr, 1/2fr;
+      grid-template-rows: 1fr, 1fr, 1/2fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.telabatista {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: telabatista;
+  margin: 0px 65px;
+  width: 110%;
+  -ms-grid-column-align: space-around;
+      justify-self: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.telapoplin {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: telapoplin;
+  margin: 0px 65px;
+  width: 110%;
+  -ms-grid-column-align: space-around;
+      justify-self: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.camisas {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: camisas;
+  margin: 0px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+/*estos ids son para generar enlaces internos dentro del html de "productos"*/
+#telasxmayor, #camisasxmayor {
+  text-decoration: underline;
+  font-size: 1.8em;
+  padding: 20px;
+  text-align: center;
+  color: #1e3752;
+  text-transform: none;
+}
+
+/*esta es para las imágenes de "productos"*/
+.imagen {
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+}
+
+/*esto es lo genérico para el contenido principal en html "nosotros"*/
+.contenedor {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+.contenedor .tarjeta {
+  background-color: #c4c3c3;
+  border-radius: 15px;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+}
+
+.tarjeta__img {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.tarjeta__video {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.tarjeta__parrafo, .tarjeta__parrafo--titulo {
+  line-height: 40px;
+  margin: 30px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.tarjeta__parrafo--titulo {
+  font-size: 1.3em;
+  font-style: bold;
+}
+
+/*esta es la imagen del html "nosotros"*/
+.imgnosotros {
+  padding: 0px 50px 00px 50px;
+  width: 400px;
+  height: 300px;
+}
+
+/*define la lista del html de "preguntasfrecuentes"*/
+ul.preguntas {
+  list-style: square;
+  margin: 15px 0px 0px 15px;
+}
+
+ul li.preguntas {
+  font-size: 1.2em;
+  line-height: 60px;
+}
+
+/*para diferenciar las respuestas en el html de "preguntas frecuentes"*/
+.italic {
+  font-style: italic;
+}
+
+/*para que las imágenes se achiquen según las pantallas en "preguntas frecuentes"*/
+.imagenpaleta {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 480px) and (max-width: 780px) {
+  .imagenpaleta {
+    width: 200px;
+    height: 200px;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .imagenpaleta {
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+  }
+}
+
+/*caracteristicas del formulario del html "contacto"*/
+form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+/*define las caracteristicas de la tabla de bs*/
+div table {
+  font-size: 1em;
+  color: #1e3752;
+}
+
+/*usé mapas y each para darle color a los botones*/
+.contactos--enviar {
+  background-color: #1e3752;
+}
+
+.contactos--limpiar {
+  background-color: #2c5178;
+}
+
+/*para que al pasar el mouse, se vea más grande el espacio para escribir en form*/
+.agrandar {
+  width: 150px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.agrandar:focus {
+  width: 200px;
+  font-size: 1.2rem;
+}
+
+/*para que al pasar el mouse por el botón, se agrande el ancho del boton*/
+input.boton {
+  width: 140px;
+  -webkit-transition: width 0s;
+  transition: width 0s;
+  color: #d9d9d9;
+}
+
+input.boton:hover {
+  width: 200px;
+}
+
+/*para que sea responsive*/
+@media screen and (min-width: 480px) and (max-width: 780px) {
+  .contenedor {
+    width: 80%;
+    margin-top: 6px;
+    line-height: 25px;
+  }
+  .contenedor .tarjeta {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .contenedor .tarjeta__img {
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+  }
+  .contenedor .tarjeta__video {
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+  }
+  .contenedor .tarjeta__parrafo, .contenedor .tarjeta__parrafo--titulo {
+    line-height: 26px;
+    margin: 20px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  #telasxmayor, #camisasxmayor {
+    font-size: 1.5em;
+  }
+  a.azul, a.subrayado {
+    text-decoration: underline;
+  }
+  .contenedor {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    line-height: 25px;
+  }
+  .contenedor .tarjeta {
+    padding: 7px;
+    margin-bottom: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contenedor .tarjeta__img {
+    width: 150px;
+    height: 100px;
+    padding: 8px;
+  }
+  .contenedor .tarjeta__video {
+    width: 150px;
+    height: 100px;
+    padding: 8px;
+  }
+  .contenedor .tarjeta__parrafo, .contenedor .tarjeta__parrafo--titulo {
+    line-height: 13px;
+    margin: 10px;
+    font-size: 0.8em;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
