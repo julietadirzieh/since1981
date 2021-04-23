@@ -9,7 +9,7 @@ h1{
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	padding: 0 10 10 10;
-	margin-top: 0px;
+	margin-top: 20px;
 	animation-name:subtitulo;
 	animation-duration: 2s;
 	font-style: $title-size;
@@ -308,14 +308,13 @@ input.boton:hover{
 }
 
 
-
 @media screen and (max-width: 480px)
 {
 	h1 {
 		font-size: 1.6em;
 	}
 
-	h1 {
+	.h7{
 		font-size: 0.8em;
 	}
 
