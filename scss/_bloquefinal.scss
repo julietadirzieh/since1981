@@ -24,13 +24,6 @@ padding: 0px;
 } 
 
 /*esto es una modificación del elemento del bloque final*/
-.contieneinfo__texto--inline{
-@extend .contieneinfo__texto;
-text-decoration: none;
-line-height: 30px;
-	} 
-
-/*esto es una modificación del elemento del bloque final*/
 .contieneinfo__texto--titulo{
 @extend .contieneinfo__texto;
 	font-size: 1.2em;
