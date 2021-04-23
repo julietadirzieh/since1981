@@ -9,7 +9,7 @@ h1{
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	padding: 10px;
-	margin-top: 30px;
+	margin: 30px;
 	animation-name:subtitulo;
 	animation-duration: 2s;
 	font-size: $title-size;
@@ -25,7 +25,7 @@ h1{
 h2{ 	
 	line-height: 40px;
 	font-size: $subtitle-size;
-	margin-top: 20px;
+	text-align: center;
 } 
 
 .detalleCombo{ 	
@@ -114,11 +114,8 @@ section article{
 /*estos ids son para generar enlaces internos dentro del html de "productos"*/
 #telasxmayor, #camisasxmayor{ 	
 	text-decoration: underline;
-	font-size: $subtitle-size;
+	font-weight: bold;
 	padding:20px;
-	text-align: center;
-	color: $color-azul;
-	text-transform: none;
 } 
 
 /*esta es para las imágenes de "productos"*/
