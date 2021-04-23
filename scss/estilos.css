@@ -251,7 +251,7 @@ section article {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: telabatista;
-  margin: 0px 20px;
+  margin: 0px 40px;
   padding: 0px 40px;
   -ms-grid-column-align: center;
       justify-self: center;
