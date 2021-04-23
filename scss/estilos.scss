@@ -8,11 +8,11 @@
 h1{ 	
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
-	padding: 0 10 10 10;
-	margin-top: 20px;
+	padding: 10px;
+	margin-top: 30px;
 	animation-name:subtitulo;
 	animation-duration: 2s;
-	font-style: $title-size;
+	font-size: $title-size;
 	text-align: center;
 }
 
@@ -25,11 +25,11 @@ h1{
 h2{ 	
 	font-weight: bold;
 	line-height: 40px;
-	font-style: $subtitle-size;
+	font-size: $subtitle-size;
 } 
 
 .h7{ 	
-	font-style: 1em;
+	font-size: $letter-size;
 } 
 
 /*esto es para los enlaces que quiero en azul*/
@@ -38,7 +38,7 @@ a.deAzulABlanco{
 	text-decoration: none;
 	text-transform: none;
 	line-height: 15px;
-	font-size: 1em;
+	font-size: $letter-size;
 }
 
 a.deAzulABlanco:hover{
@@ -110,7 +110,7 @@ section article{
 /*estos ids son para generar enlaces internos dentro del html de "productos"*/
 #telasxmayor, #camisasxmayor{ 	
 	text-decoration: underline;
-	font-size: 1.8em;
+	font-size: $subtitle-size;
 	padding:20px;
 	text-align: center;
 	color: $color-azul;
@@ -192,7 +192,7 @@ ul.preguntas{
 }
 
 ul li.preguntas{
-	font-size: 1.2em;
+	font-size: $letter-size;
 	line-height: 60px;
 }
 
@@ -236,7 +236,7 @@ form{
 
 /*define las caracteristicas de la tabla de bs*/
 div table{	
-	font-size: 1em;
+	font-size: $letter-size;
 	color:#1e3752;
 } 
 
@@ -302,7 +302,7 @@ input.boton:hover{
 	.tarjeta__parrafo {
 		line-height: 26px;
 		margin: 20px;
-		font-size: 1em;
+		font-size: $letter-size;
 	}
 }
 }
@@ -311,15 +311,19 @@ input.boton:hover{
 @media screen and (max-width: 480px)
 {
 	h1 {
-		font-size: 1.8em;
+		font-size: 2em;
 	}
 
 	h2{ 	
-		font-style: 1.2em;
+		font-size: 1.2em;
+	} 
+
+	.h6{ 	
+		font-size: 1.2em;
 	} 
 
 	.h7{
-		font-size: 1em;
+		font-size: 0.8em;
 	}
 
 	a.deAzulABlanco{
