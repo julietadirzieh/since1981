@@ -28,12 +28,16 @@ h2{
 	font-style: $subtitle-size;
 } 
 
+.h7{ 	
+	font-style: 1em;
+} 
+
 /*esto es para los enlaces que quiero en azul*/
 a.deAzulABlanco{
 	color: $color-azul !important;
 	text-decoration: none;
 	text-transform: none;
-	line-height: 10px;
+	line-height: 15px;
 	font-size: 1em;
 }
 
@@ -43,7 +47,7 @@ a.deAzulABlanco:hover{
 
 /*esto es para el enlace del "index" para reservar el combo*/
 a.subrayado{
-	@extend a.azul;
+	@extend a.deAzulABlanco;
 	text-decoration: underline;
 }
 
@@ -311,14 +315,23 @@ input.boton:hover{
 @media screen and (max-width: 480px)
 {
 	h1 {
-		font-size: 1.8em;
+		font-size: 1.6em;
 	}
+
+	h1 {
+		font-size: 0.8em;
+	}
+
+	a.deAzulABlanco{
+		line-height: 10px;
+		font-size: 0.8em;
+	} 
 
 	#telasxmayor, #camisasxmayor{ 	
 		font-size: 1.5em;
 	} 
 
-	a.azul{
+	a.deAzulABlanco{
 		text-decoration: underline;
 	}
 
