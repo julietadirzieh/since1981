@@ -86,6 +86,7 @@ a.h1 {
   clear: both;
 }
 
+/*esto es un elemento del bloque final*/
 .contieneinfo__texto, .contieneinfo__texto--inline, .contieneinfo__texto--titulo {
   color: #1e3752;
   text-transform: none;
@@ -94,11 +95,13 @@ a.h1 {
   padding: 0px;
 }
 
+/*esto es una modificación del elemento del bloque final*/
 .contieneinfo__texto--inline {
   text-decoration: none;
   line-height: 30px;
 }
 
+/*esto es una modificación del elemento del bloque final*/
 .contieneinfo__texto--titulo {
   font-size: 1.2em;
   text-decoration: none;
@@ -106,6 +109,7 @@ a.h1 {
   line-height: 25px;
 }
 
+/*para hacer responsive los iconos*/
 .icono {
   width: 30px;
   height: 30px;
