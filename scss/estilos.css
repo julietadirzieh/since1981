@@ -181,7 +181,6 @@ h1 {
 }
 
 h2 {
-  font-weight: bold;
   line-height: 40px;
   font-size: 1.3em;
   margin-top: 20px;
@@ -484,7 +483,7 @@ input.boton:hover {
     font-size: 2em;
   }
   h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
   .detalleCombo {
     font-size: 0.8em;
