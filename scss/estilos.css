@@ -253,7 +253,7 @@ section article {
   -ms-grid-column: 1;
   grid-area: telabatista;
   margin: 0px 65px;
-  width: 110%;
+  width: 100%;
   -ms-grid-column-align: space-around;
       justify-self: space-around;
   -webkit-box-align: center;
@@ -266,7 +266,7 @@ section article {
   -ms-grid-column: 1;
   grid-area: telapoplin;
   margin: 0px 65px;
-  width: 110%;
+  width: 100%;
   -ms-grid-column-align: space-around;
       justify-self: space-around;
   -webkit-box-align: center;
