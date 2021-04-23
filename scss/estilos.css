@@ -184,9 +184,10 @@ h2 {
   font-weight: bold;
   line-height: 40px;
   font-size: 1.3em;
+  margin-top: 20px;
 }
 
-.h7 {
+.detalleCombo {
   font-size: 1em;
 }
 
@@ -485,10 +486,7 @@ input.boton:hover {
   h2 {
     font-size: 1.2em;
   }
-  .h6 {
-    font-size: 1.2em;
-  }
-  .h7 {
+  .detalleCombo {
     font-size: 0.8em;
   }
   a.deAzulABlanco, a.subrayado {

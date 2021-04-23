@@ -26,9 +26,10 @@ h2{
 	font-weight: bold;
 	line-height: 40px;
 	font-size: $subtitle-size;
+	margin-top: 20px;
 } 
 
-.h7{ 	
+.detalleCombo{ 	
 	font-size: $letter-size;
 } 
 
@@ -322,11 +323,7 @@ input.boton:hover{
 		font-size: 1.2em;
 	} 
 
-	.h6{ 	
-		font-size: 1.2em;
-	} 
-
-	.h7{
+	.detalleCombo{
 		font-size: 0.8em;
 	}
 
