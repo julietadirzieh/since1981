@@ -326,15 +326,15 @@ section article {
 }
 
 .tarjeta__img {
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
   padding: 10px;
   max-width: 100%;
 }
 
 .tarjeta__video {
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
   padding: 10px;
   max-width: 100%;
 }
@@ -349,13 +349,6 @@ section article {
 .tarjeta__parrafo--titulo {
   font-size: 1.3em;
   font-style: bold;
-}
-
-/*esta es la imagen del html "nosotros"*/
-.imgnosotros {
-  padding: 0px 50px 00px 50px;
-  width: 400px;
-  height: 300px;
 }
 
 /*define la lista del html de "preguntasfrecuentes"*/
@@ -458,13 +451,13 @@ input.boton:hover {
     margin-bottom: 20px;
   }
   .contenedor .tarjeta__img {
-    width: 200px;
-    height: 150px;
+    width: 300px;
+    height: 200px;
     padding: 10px;
   }
   .contenedor .tarjeta__video {
-    width: 200px;
-    height: 150px;
+    width: 300px;
+    height: 200px;
     padding: 10px;
   }
   .contenedor .tarjeta__parrafo, .contenedor .tarjeta__parrafo--titulo {
