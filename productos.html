@@ -15,7 +15,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<!-- Mi CSS -->
-	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="scss/estilos.css">
 	<link rel="icon" href="img/logo.png" type="image/png">
 	<link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -71,93 +71,78 @@
 			<h2 id="telasxmayor">Telas por mayor</h2>
 		</div>
 
-		<section id="grilla" class="container">
+		<div id="grilla">
 			<!-- grids con todos los productos en 3 filas y 2 columnas para ≥768px, y 1 columna <768px -->
 
-			<div class="telabatista">
-				<!-- primera fila del grids-->
-				<div class="row">
-					<div class="col-md-6 col-sm-12">
-						<div class="card bg-light text-center border" style="width: 18rem;">
+			<div class="telabatistalisa"><!-- primera columna del grids-->
+						<div class="card bg-light text-center border" style="width:18rem;">
 							<!-- formato de card -->
 							<img class="card-img-top imagen" src="img/batistalisa.jpeg" alt="">
 							<div class="card-body bg-light">
 								<h5 class="card-title">Batista Lisa</h5>
 								<p class="card-text"><small class="text-muted">10 colores disponibles.</small></p>
-								<a href="download/catalogo1since1981.pdf" download="Since 1981 Catalogo 1"
-									class="btn btn-outline-secondary deAzulABlanco">Descargar catálogo Batista</a>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-6 col-sm-12">
-						<div class="card bg-light text-center border" style="width: 18rem;">
-							<!-- formato de card -->
-							<img class="card-img-top imagen" src="img/batistaestampada.png" alt="">
-							<div class="card-body bg-light">
-								<h5 class="card-title">Batista Estampada</h5>
-								<p class="card-text"><small class="text-muted">Más de 20 diseños disponibles.</small>
-								</p>
-								<a href="download/catalogo1since1981.pdf" download="Since 1981 Catalogo 1"
-									class="btn btn-outline-secondary deAzulABlanco">Descargar catálogo Batista</a>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 
-			<div class="telapoplin">
-				<!-- segunda fila del grids-->
-				<div class="row">
-					<div class="col-md-6 col-sm-12">
-						<div class="card bg-light text-center border" style="width: 18rem;">
+			<div class="telapoplinestampada"><!-- primera columna de la segunda fila del grids-->
+						<div class="card bg-light text-center border" style="width:18rem;">
 							<!-- formato de card -->
 							<img class="card-img-top imagen" src="img/poplinestampado.png" alt="">
 							<div class="card-body bg-light">
 								<h5 class="card-title">Poplin</h5>
-								<p class="card-text"><small class="text-muted">Lisas y estampadas. Variedad de colores y
-										diseños disponibles.</small></p>
-								<a href="download/catalogo2since1981.pdf" download="Since 1981 Catalogo 2"
-									class="btn btn-outline-secondary deAzulABlanco">Descargar catálogo Poplin</a>
+								<p class="card-text"><small class="text-muted">Lisas y estampadas.</small></p>
 							</div>
 						</div>
+			</div>
+
+			<div class="telabatistaestampada"><!-- segunda columna del grids-->
+				<div class="card bg-light text-center border" style="width:18rem;">
+					<!-- formato de card -->
+					<img class="card-img-top imagen" src="img/batistaestampada.png" alt="">
+					<div class="card-body bg-light">
+						<h5 class="card-title">Batista Estampada</h5>
+						<p class="card-text"><small class="text-muted">Más de 20 diseños disponibles.</small>
+						</p>
 					</div>
-					<div class="col-md-6 col-sm-12">
-						<div class="card bg-light text-center border" style="width: 18rem;">
+				</div>
+			</div>
+
+			<div class="telapoplinelastizadaestampada"> <!-- segunda columna de la segunda fila del grids-->
+						<div class="card bg-light text-center border" style="width:18rem;">
 							<img class="card-img-top imagen" src="img/poplinelastizadoliso.png" alt="">
 							<!-- formato de card -->
 							<div class="card-body bg-light">
 								<h5 class="card-title">Poplin Elastizado</h5>
-								<p class="card-text"><small class="text-muted">Lisas y estampadas. Variedad de colores y
-										diseños disponibles.</small></p>
-								<a href="download/catalogo1since1981.pdf" download="Since 1981 Catalogo 1"
-									class="btn btn-outline-secondary deAzulABlanco">Descargar catálogo Poplin</a>
+								<p class="card-text"><small class="text-muted">Lisas y estampadas.</small></p>
 							</div>
 						</div>
-					</div>
-				</div>
 			</div>
 
-			<div class="camisas">
-				<!-- tercera fila del grids-->
-				<div>
-					<h2 id="camisasxmayor">Camisas por mayor</h2>
-				</div>
-				<div class="row">
-					<div class="col-12">
-						<div class="card bg-light text-center border" style="width: 18rem;">
+			<div class="descargarcatalogobatista" style="margin: 1em"> <!-- tercera fila del grids-->
+				<a href="download/catalogo1since1981.pdf" download="Since 1981 Catalogo 1"
+				class="btn btn-outline-secondary deAzulABlanco">Descargar catálogo Batista</a>
+			</div>
+				<div class="descargarcatalogopoplin" style="margin: 1em"> 
+				<a href="download/catalogo1since1981.pdf" download="Since 1981 Catalogo 1"
+				class="btn btn-outline-secondary deAzulABlanco">Descargar catálogo Poplin</a>
+			</div>
+
+			<div class="camisas"><!-- cuarta fila del grids-->
+				<h2 id="camisasxmayor">Camisas por mayor</h2>		
+				<div class="card bg-light text-center border" style="width:18rem;">
 							<img src="img/camisas.jpeg" class="card-img-top imagen" alt=""><!-- formato de card -->
 							<div class="card-body bg-light">
-								<h5 class="card-title"><a href="contacto.html"
-										class="btn btn-outline-secondary deAzulABlanco">Consultanos por privado</a></h5>
 								<p class="card-text"><small class="text-muted">Contamos con más de 50 diseños exclusivos
 										en variedad de colores.</small></p>
 							</div>
 						</div>
+					<div class="d-grid" style="margin: 1em;">
+						<a href="contacto.html" class="btn btn-outline-secondary deAzulABlanco">Consultanos por privado</a>
 					</div>
-				</div>
 			</div>
 
-		</section>
+		</div>
 
 		<hr> <!-- Sección final en 3 BEM-->
 		<div class="row contieneinfo final">

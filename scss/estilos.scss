@@ -77,44 +77,50 @@ section article{
 #grilla{
 	display:grid;
 	grid-template-areas: 
-		"telabatista"
-		"telapoplin"
-		"camisas";
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr, 1fr, 1/2fr;
-	grid-row-gap: 10px;
-	grid-column-gap:10px;
-	width: 100%;
+		"telabatistalisa telapoplinestampada"
+		"telabatistaestampada telapoplinelastizadaestampada"
+		"descargarcatalogobatista descargarcatalogopoplin"
+		"camisas camisas";
+	grid-template-columns: repeat(2,1/2fr);
+	grid-template-rows: 1fr, 1/6fr, 1fr, 1/2fr;
+	grid-gap:10px;
+	justify-items: center;
+	align-items: center;
 }
 
-.telabatista{
-	grid-area: telabatista;
-	margin: 0px 40px;
-	padding: 0px 40px;
-	justify-self: center;
-	align-items: center;
-	justify-content: space-evenly;
+.telabatistalisa{
+	grid-area: telabatistalisa;
 }
 
-.telapoplin{
-	grid-area: telapoplin;
-	margin: 0px 20px;
-	padding: 0px 40px;
-	justify-self: center;
-	align-items: center;
-	justify-content: space-evenly;
+.telabatistaestampada{
+	grid-area: telabatistaestampada;
+}
+
+.descargarcatalogobatista{
+	grid-area: descargarcatalogobatista;
+}
+
+.descargarcatalogopoplin{
+	grid-area: descargarcatalogopoplin;
+}
+
+.telapoplinestampada{
+	grid-area: telapoplinestampada;
+}
+
+.telapoplinelastizadaestampada{
+	grid-area: telapoplinelastizadaestampada;
 }
 
 .camisas{
 	grid-area: camisas;
-	margin: 0px;
-	justify-self: center;
 }
 
 /*estos ids son para generar enlaces internos dentro del html de "productos"*/
 #telasxmayor, #camisasxmayor{ 	
 	text-decoration: underline;
 	font-weight: bold;
+	margin-top: 10px;
 } 
 
 /*esta es para las imágenes de "productos"*/
@@ -145,15 +151,15 @@ section article{
 }
 
 .tarjeta__img {
-	width: 400px;
-	height: 300px;
+	width: 500px;
+	height: 350px;
 	padding: 10px;
 	max-width: 100%;
 }
 
 .tarjeta__video {
-	width: 400px;
-	height: 300px;
+	width: 500px;
+	height: 350px;
 	padding: 10px;
 	max-width: 100%;
 }
@@ -273,6 +279,23 @@ input.boton:hover{
 
 /*para que sea responsive*/
 @media screen and (min-width:480px) and (max-width:780px){
+	#grilla{
+		display:grid;
+		grid-template-areas: 
+			"telabatistalisa"
+			"telabatistaestampada"
+			"descargarcatalogobatista"
+			"telapoplinestampada" 
+			"telapoplinelastizadaestampada"
+			"descargarcatalogopoplin"
+			"camisas";
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(7,1/2fr);
+		grid-gap:10px;
+		justify-items: center;
+		align-items: center;
+	}
+
 	.contenedor {
 		width: 80%;
 		margin-top: 6px;
@@ -283,14 +306,14 @@ input.boton:hover{
 			margin-bottom: 20px; 
 	}
 	.tarjeta__img {
-		width: 300px;
-		height: 200px;
+		width: 400px;
+		height: 250px;
 		padding: 10px;
 	}
 	
 	.tarjeta__video {
-		width: 300px;
-		height: 200px;
+		width: 400px;
+		height: 250px;
 		padding: 10px;
 	}
 	.tarjeta__parrafo {
@@ -319,14 +342,24 @@ input.boton:hover{
 	a.deAzulABlanco{
 		line-height: 10px;
 		font-size: 0.8em;
-	} 
-
-	#telasxmayor, #camisasxmayor{ 	
-		font-size: 1.5em;
-	} 
-
-	a.deAzulABlanco{
 		text-decoration: underline;
+	}
+
+	#grilla{
+		display:grid;
+		grid-template-areas: 
+		"telabatistalisa"
+		"telabatistaestampada"
+		"descargarcatalogobatista"
+		"telapoplinestampada" 
+		"telapoplinelastizadaestampada"
+		"descargarcatalogopoplin"
+		"camisas";
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(7,1/2fr);
+		grid-gap:10px;
+		justify-items: center;
+		align-items: center;
 	}
 
 	.contenedor {
@@ -344,14 +377,14 @@ input.boton:hover{
 	}
 	
 	.tarjeta__img {
-		width: 150px;
-		height: 100px;
+		width: 200px;
+		height: 175px;
 		padding: 8px;
 	}
 	
 	.tarjeta__video {
-		width: 150px;
-		height: 100px;
+		width: 200px;
+		height: 175px;
 		padding: 8px;
 	}
 
