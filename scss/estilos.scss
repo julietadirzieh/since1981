@@ -5,16 +5,21 @@
 @import "bloquefinal";
 @import "footer";
 
+@mixin fontStyle($font-size) {
+	color: $color-azul;
+	text-align: center;
+	margin: 15px;
+	font-size: $font-size;
+}
+
 /*para definir los titulos de todas las paginas*/
 h1{ 	
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	padding: 10px;
-	margin: 15px;
 	animation-name:subtitulo;
 	animation-duration: 2s;
-	font-size: $title-size;
-	text-align: center;
+	@include fontStyle($title-size);
 }
 
 /*para que los títulos de las páginas aparezcan con un efecto*/
@@ -26,12 +31,11 @@ h1{
 /*para definir los subtitulos de todas las paginas*/
 h2{ 	
 	padding: 10px;
-	font-size: $subtitle-size;
-	text-align: center;
+	@include fontStyle($subtitle-size);
 } 
 
 .detalleCombo{ 	
-	font-size: $letter-size;
+	@include fontStyle($letter-size);
 } 
 
 /*esto es para los enlaces que quiero que estén en azul y cuando se pasa el mouse en blanco*/
@@ -103,6 +107,7 @@ section article{
 	width: 400px;
 	height: 250px;
 	max-width: 100%;
+	cursor: pointer;
 }
 
 .recuadroDeNosotros__parrafo {
@@ -117,7 +122,6 @@ section article{
 	font-size: $subtitle-size;
 	font-style: bold;
 }
-
 
 /*esto es grids para el html de "productos"*/
 #grilla{
@@ -206,7 +210,7 @@ ul li.preguntas{
 }
 
 /*el modal de la imagen de las paletas de colores*/
-#modalPaleta1, #modalPaleta2, #modalPaleta3, .modal-img{
+#modalPaleta1, #modalPaleta2, #modalPaleta3, #modalNosotros, .modal-img{
 	width: 100%;
 	max-width: 100%;
 }

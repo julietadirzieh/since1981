@@ -154,13 +154,14 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   padding: 10px;
-  margin: 15px;
   -webkit-animation-name: subtitulo;
           animation-name: subtitulo;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
-  font-size: 2.2em;
+  color: #1e3752;
   text-align: center;
+  margin: 15px;
+  font-size: 2.2em;
 }
 
 /*para que los títulos de las páginas aparezcan con un efecto*/
@@ -184,11 +185,16 @@ h1 {
 /*para definir los subtitulos de todas las paginas*/
 h2 {
   padding: 10px;
-  font-size: 1.3em;
+  color: #1e3752;
   text-align: center;
+  margin: 15px;
+  font-size: 1.3em;
 }
 
 .detalleCombo {
+  color: #1e3752;
+  text-align: center;
+  margin: 15px;
   font-size: 1em;
 }
 
@@ -268,6 +274,7 @@ section article {
   width: 400px;
   height: 250px;
   max-width: 100%;
+  cursor: pointer;
 }
 
 .recuadroDeNosotros__parrafo, .recuadroDeNosotros__parrafo--titulo {
@@ -383,7 +390,7 @@ ul li.preguntas {
 }
 
 /*el modal de la imagen de las paletas de colores*/
-#modalPaleta1, #modalPaleta2, #modalPaleta3, .modal-img {
+#modalPaleta1, #modalPaleta2, #modalPaleta3, #modalNosotros, .modal-img {
   width: 100%;
   max-width: 100%;
 }
