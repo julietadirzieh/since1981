@@ -379,6 +379,13 @@ ul li.preguntas {
   height: 300px;
   padding: 10px;
   max-width: 100%;
+  cursor: pointer;
+}
+
+/*el modal de la imagen de las paletas de colores*/
+#modalPaleta1, #modalPaleta2, #modalPaleta3, .modal-img {
+  width: 100%;
+  max-width: 100%;
 }
 
 /*caracteristicas del formulario del html "contacto"*/
@@ -504,6 +511,7 @@ input.boton:hover {
   .imagenPaletaDeColores {
     width: 200px;
     height: 200px;
+    padding: 8px;
   }
 }
 
@@ -595,6 +603,7 @@ input.boton:hover {
   .imagenPaletaDeColores {
     width: 150px;
     height: 150px;
+    padding: 5px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
