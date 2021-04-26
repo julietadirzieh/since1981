@@ -1,5 +1,5 @@
 /*esto es el bloque final*/
-.contieneinfo{
+.seccionFinal{
 	background: $background-color-grey;
 	text-align: center;
 }
@@ -15,7 +15,7 @@
   }
 
 /*esto es un elemento del bloque final*/
-.contieneinfo__texto{
+.seccionFinal__texto{
 color: $color-azul;
 text-transform: none;
 text-decoration: none;
@@ -24,8 +24,8 @@ padding: 0px;
 } 
 
 /*esto es una modificación del elemento del bloque final*/
-.contieneinfo__texto--titulo{
-@extend .contieneinfo__texto;
+.seccionFinal__texto--titulo{
+@extend .seccionFinal__texto;
 	font-size: 1.2em;
 	text-decoration: none;
 	font-weight: bold;
@@ -54,7 +54,7 @@ padding: 0px;
 		height: 10px;
 		margin: 2px;
 	} 
-	.contieneinfo{
+	.seccionFinal{
         width: auto;
 		height: 10%;
     }
@@ -63,12 +63,12 @@ padding: 0px;
 		width: 100%;
 		height: 10%;
 	}
-	.contieneinfo__texto{
+	.seccionFinal__texto{
 		font-size: 0.8em;
 		line-height: 10px;
 		} 
 		
-		.contieneinfo__texto--titulo{
+		.seccionFinal__texto--titulo{
 			font-size: $letter-size;
 			line-height: 12px;
 		} 

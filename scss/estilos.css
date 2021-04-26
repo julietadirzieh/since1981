@@ -70,7 +70,7 @@ a.h1 {
 }
 
 /*esto es el bloque final*/
-.contieneinfo {
+.seccionFinal {
   background: -webkit-gradient(linear, left top, left bottom, from(#d9d9d9), to(#f8f8f8));
   background: linear-gradient(to bottom, #d9d9d9, #f8f8f8);
   text-align: center;
@@ -87,7 +87,7 @@ a.h1 {
 }
 
 /*esto es un elemento del bloque final*/
-.contieneinfo__texto, .contieneinfo__texto--titulo {
+.seccionFinal__texto, .seccionFinal__texto--titulo {
   color: #1e3752;
   text-transform: none;
   text-decoration: none;
@@ -96,7 +96,7 @@ a.h1 {
 }
 
 /*esto es una modificación del elemento del bloque final*/
-.contieneinfo__texto--titulo {
+.seccionFinal__texto--titulo {
   font-size: 1.2em;
   text-decoration: none;
   font-weight: bold;
@@ -124,7 +124,7 @@ a.h1 {
     height: 10px;
     margin: 2px;
   }
-  .contieneinfo {
+  .seccionFinal {
     width: auto;
     height: 10%;
   }
@@ -132,11 +132,11 @@ a.h1 {
     width: 100%;
     height: 10%;
   }
-  .contieneinfo__texto, .contieneinfo__texto--titulo {
+  .seccionFinal__texto, .seccionFinal__texto--titulo {
     font-size: 0.8em;
     line-height: 10px;
   }
-  .contieneinfo__texto--titulo {
+  .seccionFinal__texto--titulo {
     font-size: 1em;
     line-height: 12px;
   }
