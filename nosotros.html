@@ -14,7 +14,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<!-- Mi CSS -->
-	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="scss/estilos.css">
 	<title>Since 1981 Textil</title>
 	<link rel="icon" href="img/logo.png" type="image/png">
 	<link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -38,21 +38,21 @@
 						<li class="nav-item">
 							<a class="nav-link enlaces" href="index.html">Inicio</a>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link active enlaces" aria-current="page" href="#nosotros">Nosotros</a>
+						</li>
 						<li class="nav-item dropdown">
 							<!-- Dropdown para poder ver el submenu -->
 							<a class="nav-link dropdown-toggle enlaces" href="productos.html"
 								id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
 								aria-expanded="false">
 								Productos</a>
-							<ul class="dropdown-menu fondoAzul" aria-labelledby="navbarDropdownMenuLink">
+							<ul class="dropdown-menu fondoAzul enlaces" aria-labelledby="navbarDropdownMenuLink">
 								<li><a class="dropdown-item enlaces" href="productos.html#telasxmayor">Telas por
 										mayor</a></li>
 								<li><a class="dropdown-item enlaces" href="productos.html#camisasxmayor">Camisas por
 										mayor</a></li>
 							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active enlaces" aria-current="page" href="#nosotros">Nosotros</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link enlaces" href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
@@ -72,31 +72,31 @@
 
 		<!-- El contenido de la página dividida en 3 tarjetas-->
 		<section class="contenedor">
-			<div class="tarjeta">
-				<!-- Tarjeta 1-->
-				<p class="tarjeta__parrafo--titulo">Somos una empresa familiar con más de 40 años en el rubro textil.
+			<div class="recuadroDeNosotros">
+				<!--Recuadro de la sección de Nosotros 1-->
+				<p class="recuadroDeNosotros__parrafo--titulo">Somos una empresa familiar con más de 40 años en el rubro textil.
 					Fabricamos y realizamos el proceso de la tela de principio a fin: tejemos, teñimos y estampamos.</p>
-				<img class="tarjeta__img rounded align-self-center" src="img/rollos.png" alt="">
+				<img class="recuadroDeNosotros__img rounded align-self-center justify-self-end" src="img/rollos.png" alt="">
 			</div>
 		</section>
 
 		<section class="contenedor">
-			<div class="tarjeta">
-				<!-- Tarjeta 2-->
-				<video class="tarjeta__video rounded align-self-center" src="video/maquina.mp4" alt="" controls>Este video no puede
+			<div class="recuadroDeNosotros">
+				<!-- Recuadro de la sección de Nosotros 2-->
+				<video class="recuadroDeNosotros__video rounded align-self-center" src="video/maquina.mp4" alt="" controls>Este video no puede
 					reproducirse</video>
-				<p class="tarjeta__parrafo">Trabajamos principalmente telas estampadas, las que definimos junto
+				<p class="recuadroDeNosotros__parrafo">Trabajamos principalmente telas estampadas, las que definimos junto
 					con nuestras diseñadoras. Además, contamos con telas lisas y confeccionamos camisas para que 
 					no tengas que preocuparte por este último paso. </p>
 			</div>
 		</section>
 
 		<section class="contenedor">
-			<div class="tarjeta">
-				<!-- Tarjeta 3-->
-				<p class="tarjeta__parrafo">Hacemos ventas por mayor y envíos a todo el país.</p>
-				<img src="img/camisas.png" alt="" class="tarjeta__img rounded align-self-center" />
-				<p class="tarjeta__parrafo">¡Te invitamos a conocer nuestras oficinas en el barrio de Montserrat!</p>
+			<div class="recuadroDeNosotros">
+				<!-- Recuadro de la sección de Nosotros 3-->
+				<p class="recuadroDeNosotros__parrafo">Hacemos ventas por mayor y envíos a todo el país.</p>
+				<img src="img/camisas.png" alt="" class="recuadroDeNosotros__img rounded align-self-center justify-self-center" />
+				<p class="recuadroDeNosotros__parrafo">¡Te invitamos a conocer nuestras oficinas en el barrio de Montserrat!</p>
 			</div>
 		</section>
 
@@ -104,7 +104,7 @@
 		<div class="row contieneinfo final">
 			<div class="column">
 				<!-- Bloque 1-->
-				<h2 class="contieneinfo__texto--titulo">Categorías</h2>
+				<h3 class="contieneinfo__texto--titulo">Categorías</h3>
 				<a href="#index" class="deAzulABlanco">
 					<p>Inicio</p>
 				</a>
@@ -124,7 +124,7 @@
 
 			<div class="column">
 				<!-- Bloque 2-->
-				<h2 class="contieneinfo__texto--titulo">Contactános</h2>
+				<h3 class="contieneinfo__texto--titulo">Contactános</h3>
 				<p class="contieneinfo__texto"><img src="img/mail.png" alt="mail" class="icono"><a
 						href="mailto:estero1981@gmail.com" class="deAzulABlanco">estero1981@gmail.com</a></p>
 				<p class="contieneinfo__texto"><img src="img/location.png" alt="ubicacion" class="icono"><a
@@ -134,7 +134,7 @@
 
 			<div class="column">
 				<!-- Bloque 3-->
-				<h2 class="contieneinfo__texto--titulo">Sigamos conectados</h2>
+				<h3 class="contieneinfo__texto--titulo">Sigamos conectados</h3>
 				<p class="contieneinfo__texto"><img src="img/insta.png" alt="insta" class="icono"><a
 						href="https://www.instagram.com/since1981textil/" class="deAzulABlanco">@since1981textil</a></p>
 				<p class="contieneinfo__texto"><img src="img/fb.png" alt="fb" class="icono"><a

@@ -149,11 +149,12 @@ footer {
   color: #d9d9d9;
 }
 
+/*para definir los titulos de todas las paginas*/
 h1 {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   padding: 10px;
-  margin: 30px;
+  margin: 15px;
   -webkit-animation-name: subtitulo;
           animation-name: subtitulo;
   -webkit-animation-duration: 2s;
@@ -162,7 +163,7 @@ h1 {
   text-align: center;
 }
 
-/*esto es para que los títulos de las páginas aparezcan con un efecto*/
+/*para que los títulos de las páginas aparezcan con un efecto*/
 @-webkit-keyframes subtitulo {
   0% {
     opacity: 0;
@@ -180,8 +181,9 @@ h1 {
   }
 }
 
+/*para definir los subtitulos de todas las paginas*/
 h2 {
-  line-height: 40px;
+  padding: 10px;
   font-size: 1.3em;
   text-align: center;
 }
@@ -190,7 +192,7 @@ h2 {
   font-size: 1em;
 }
 
-/*esto es para los enlaces que quiero en azul*/
+/*esto es para los enlaces que quiero que estén en azul y cuando se pasa el mouse en blanco*/
 a.deAzulABlanco, a.subrayado {
   color: #1e3752 !important;
   text-decoration: none;
@@ -233,6 +235,53 @@ section article {
   padding: 10px;
 }
 
+/*esto es lo genérico para el contenido principal en html "nosotros"*/
+.contenedor {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+.contenedor .recuadroDeNosotros {
+  background-color: #c4c3c3;
+  border-radius: 15px;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*para que esté centrado en el medio del recuadro*/
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+}
+
+.recuadroDeNosotros__img {
+  width: 400px;
+  height: 250px;
+  max-width: 100%;
+}
+
+.recuadroDeNosotros__video {
+  width: 400px;
+  height: 250px;
+  max-width: 100%;
+}
+
+.recuadroDeNosotros__parrafo, .recuadroDeNosotros__parrafo--titulo {
+  line-height: 40px;
+  margin: 30px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.recuadroDeNosotros__parrafo--titulo {
+  font-size: 1.3em;
+  font-style: bold;
+}
+
 /*esto es grids para el html de "productos"*/
 #grilla {
   display: -ms-grid;
@@ -240,9 +289,10 @@ section article {
       grid-template-areas: "telabatistalisa telapoplinestampada" "telabatistaestampada telapoplinelastizadaestampada" "descargarcatalogobatista descargarcatalogopoplin" "camisas camisas";
   -ms-grid-columns: (1/2fr)[2];
       grid-template-columns: repeat(2, 1/2fr);
-  -ms-grid-rows: 1fr, 1/6fr, 1fr, 1/2fr;
-      grid-template-rows: 1fr, 1/6fr, 1fr, 1/2fr;
-  grid-gap: 10px;
+  -ms-grid-rows: 1/2fr, 1/2fr, 1/6fr, 1/2fr;
+      grid-template-rows: 1/2fr, 1/2fr, 1/6fr, 1/2fr;
+  grid-gap: 20px;
+  margin: 50px 200px;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -300,60 +350,11 @@ section article {
 }
 
 /*esta es para las imágenes de "productos"*/
-.imagen {
+.imagenDeProductos {
   max-width: 100%;
   width: 300px;
   height: 300px;
   padding: 10px;
-}
-
-/*esto es lo genérico para el contenido principal en html "nosotros"*/
-.contenedor {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 10px;
-  line-height: 25px;
-}
-
-.contenedor .tarjeta {
-  background-color: #c4c3c3;
-  border-radius: 15px;
-  padding: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: auto;
-}
-
-.tarjeta__img {
-  width: 500px;
-  height: 350px;
-  padding: 10px;
-  max-width: 100%;
-}
-
-.tarjeta__video {
-  width: 500px;
-  height: 350px;
-  padding: 10px;
-  max-width: 100%;
-}
-
-.tarjeta__parrafo, .tarjeta__parrafo--titulo {
-  line-height: 40px;
-  margin: 30px;
-  font-size: 1.2em;
-  text-align: center;
-}
-
-.tarjeta__parrafo--titulo {
-  font-size: 1.3em;
-  font-style: bold;
 }
 
 /*define la lista del html de "preguntasfrecuentes"*/
@@ -373,27 +374,11 @@ ul li.preguntas {
 }
 
 /*para que las imágenes se achiquen según las pantallas en "preguntas frecuentes"*/
-.imagenpaleta {
+.imagenPaletaDeColores {
   width: 300px;
   height: 300px;
   padding: 10px;
   max-width: 100%;
-}
-
-@media screen and (min-width: 480px) and (max-width: 780px) {
-  .imagenpaleta {
-    width: 200px;
-    height: 200px;
-    padding: 8px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .imagenpaleta {
-    width: 150px;
-    height: 150px;
-    padding: 5px;
-  }
 }
 
 /*caracteristicas del formulario del html "contacto"*/
@@ -444,7 +429,7 @@ input.boton:hover {
   width: 200px;
 }
 
-/*para que sea responsive*/
+/*responsive en pantallas de entre 480px a 780px*/
 @media screen and (min-width: 480px) and (max-width: 780px) {
   #grilla {
     display: -ms-grid;
@@ -459,30 +444,66 @@ input.boton:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 0;
+  }
+  .telabatistalisa {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: telabatistalisa;
+  }
+  .telabatistaestampada {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: telabatistaestampada;
+  }
+  .descargarcatalogobatista {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: descargarcatalogobatista;
+  }
+  .descargarcatalogopoplin {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: descargarcatalogopoplin;
+  }
+  .telapoplinestampada {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: telapoplinestampada;
+  }
+  .telapoplinelastizadaestampada {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: telapoplinelastizadaestampada;
+  }
+  .camisas {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: camisas;
   }
   .contenedor {
-    width: 80%;
-    margin-top: 6px;
-    line-height: 25px;
+    width: 100%;
+    height: auto;
+    margin: 0px;
   }
-  .contenedor .tarjeta {
-    padding: 10px;
-    margin-bottom: 20px;
+  .recuadroDeNosotros__img {
+    width: 300px;
+    height: 175px;
+    padding: 8px;
   }
-  .contenedor .tarjeta__img {
-    width: 400px;
-    height: 250px;
-    padding: 10px;
+  .recuadroDeNosotros__video {
+    width: 300px;
+    height: 175px;
+    padding: 8px;
   }
-  .contenedor .tarjeta__video {
-    width: 400px;
-    height: 250px;
-    padding: 10px;
-  }
-  .contenedor .tarjeta__parrafo, .contenedor .tarjeta__parrafo--titulo {
+  .recuadroDeNosotros__parrafo, .recuadroDeNosotros__parrafo--titulo {
     line-height: 26px;
     margin: 20px;
     font-size: 1em;
+  }
+  .imagenPaletaDeColores {
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -514,38 +535,66 @@ input.boton:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 0;
+  }
+  .telabatistalisa {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: telabatistalisa;
+  }
+  .telabatistaestampada {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: telabatistaestampada;
+  }
+  .descargarcatalogobatista {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: descargarcatalogobatista;
+  }
+  .descargarcatalogopoplin {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: descargarcatalogopoplin;
+  }
+  .telapoplinestampada {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: telapoplinestampada;
+  }
+  .telapoplinelastizadaestampada {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: telapoplinelastizadaestampada;
+  }
+  .camisas {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: camisas;
   }
   .contenedor {
     width: 100%;
     height: auto;
     margin: 0px;
-    line-height: 25px;
   }
-  .contenedor .tarjeta {
-    padding: 7px;
-    margin-bottom: 10px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .recuadroDeNosotros__img {
+    width: 150px;
+    height: 100px;
+    padding: 0px;
   }
-  .contenedor .tarjeta__img {
+  .recuadroDeNosotros__video {
     width: 200px;
-    height: 175px;
-    padding: 8px;
+    height: 100px;
+    padding: 0px;
   }
-  .contenedor .tarjeta__video {
-    width: 200px;
-    height: 175px;
-    padding: 8px;
-  }
-  .contenedor .tarjeta__parrafo, .contenedor .tarjeta__parrafo--titulo {
+  .recuadroDeNosotros__parrafo, .recuadroDeNosotros__parrafo--titulo {
     line-height: 13px;
     margin: 10px;
     font-size: 0.8em;
+  }
+  .imagenPaletaDeColores {
+    width: 150px;
+    height: 150px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
