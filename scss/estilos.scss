@@ -195,6 +195,12 @@ ul li.preguntas{
 	line-height: 60px;
 }
 
+/*define las caracteristicas de la tabla de bs*/
+div table{	
+	font-size: $letter-size;
+	color:#1e3752;
+} 
+
 /*para diferenciar las respuestas en el html de "preguntas frecuentes"*/
 .italic{ 	
 	font-style: italic;
@@ -218,18 +224,21 @@ ul li.preguntas{
 
 /*caracteristicas del formulario del html "contacto"*/
 form{
-	margin: 0 auto;
 	width: 400px;
 	padding: 1em;
 	border: 1px solid #CCC;
 	border-radius: 1em;
+	text-align: left;
+	text-justify:auto;
+	margin: 0px 50px;
+	background-color: #f1f1f1;
 }
 
-/*define las caracteristicas de la tabla de bs*/
-div table{	
-	font-size: $letter-size;
-	color:#1e3752;
-} 
+.paraHacerloInline{
+	display: inline-block;
+	margin: 0px 120px;
+	text-align: center;
+}
 
 /*usé mapas y each para darle color a los botones*/
 $contactos: (
@@ -241,6 +250,12 @@ $contactos: (
 .contactos--#{$contacto} {
 	background-color: $color;
 }
+}
+
+.inputForm{
+	background-color: $color-gris;
+	border-radius: 0.5em;
+	border: 1px solid #CCC;
 }
 
 /*para que al pasar el mouse, se vea más grande el espacio para escribir en form*/
@@ -256,16 +271,23 @@ $contactos: (
 
 /*para que al pasar el mouse por el botón, se agrande el ancho del boton*/
 input.boton{
-	width: 140px;
+	width: 150px;
 	transition: width 0s;
 	color: $color-gris;
+	border-radius: 1em;
+	border: 1px solid #CCC;
 }
 
 input.boton:hover{
 	width: 200px;
 }
 
-
+iframe{
+	width:400px;
+	height:250px;
+	border-radius: 1em;
+	margin: 0px 0px 50px 0px;
+}
 
 /*responsive en pantallas de entre 480px a 780px*/
 @media screen and (min-width:480px) and (max-width:780px)
