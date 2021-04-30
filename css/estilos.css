@@ -3,8 +3,8 @@
 /*variables de colores*/
 /*caracteristicas generales*/
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -250,7 +250,7 @@ section article {
 }
 
 .contenedor .recuadroDeNosotros {
-  background-color: #c4c3c3;
+  background-image: url(../img/camisas.png);
   border-radius: 15px;
   padding: 20px;
   -webkit-box-align: center;
@@ -375,6 +375,12 @@ ul li.preguntas {
   line-height: 60px;
 }
 
+/*define las caracteristicas de la tabla de bs*/
+div table {
+  font-size: 1em;
+  color: #1e3752;
+}
+
 /*para diferenciar las respuestas en el html de "preguntas frecuentes"*/
 .italic {
   font-style: italic;
@@ -395,19 +401,37 @@ ul li.preguntas {
   max-width: 100%;
 }
 
-/*caracteristicas del formulario del html "contacto"*/
+/*caracteristicas del html "contacto"*/
+.inlineBlockPadre {
+  text-align: center;
+  width: 100%;
+}
+
+.inlineBlockHijo {
+  display: inline-block;
+  margin: 0px auto;
+  padding: 0px 80px;
+  width: 50%;
+}
+
+.inlineBlockHijo1 {
+  display: inline-block;
+  width: 40%;
+}
+
 form {
-  margin: 0 auto;
-  width: 400px;
   padding: 1em;
   border: 1px solid #CCC;
   border-radius: 1em;
+  background-color: #f1f1f1;
+  text-align: left;
 }
 
-/*define las caracteristicas de la tabla de bs*/
-div table {
-  font-size: 1em;
-  color: #1e3752;
+iframe {
+  border-radius: 1em;
+  border: 1px solid #CCC;
+  width: 100%;
+  height: 300px;
 }
 
 /*usé mapas y each para darle color a los botones*/
@@ -416,31 +440,28 @@ div table {
 }
 
 .contactos--limpiar {
-  background-color: #2c5178;
+  background-color: #d9d9d9;
 }
 
-/*para que al pasar el mouse, se vea más grande el espacio para escribir en form*/
-.agrandar {
-  width: 150px;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.agrandar:focus {
-  width: 200px;
-  font-size: 1.2rem;
+.inputForm {
+  background-color: #d9d9d9;
+  border-radius: 0.5em;
+  border: 1px solid #CCC;
+  width: 100%;
 }
 
 /*para que al pasar el mouse por el botón, se agrande el ancho del boton*/
-input.boton {
-  width: 140px;
+.botonEnviar {
+  width: 50%;
   -webkit-transition: width 0s;
   transition: width 0s;
   color: #d9d9d9;
+  border-radius: 1em;
+  border: 1px solid #CCC;
 }
 
-input.boton:hover {
-  width: 200px;
+.botonEnviar:hover {
+  width: 55%;
 }
 
 /*responsive en pantallas de entre 480px a 780px*/
@@ -519,6 +540,12 @@ input.boton:hover {
     width: 200px;
     height: 200px;
     padding: 8px;
+  }
+  .inlineBlockHijo {
+    width: 90%;
+  }
+  .inlineBlockHijo1 {
+    width: 70%;
   }
 }
 
@@ -611,6 +638,12 @@ input.boton:hover {
     width: 150px;
     height: 150px;
     padding: 5px;
+  }
+  .inlineBlockHijo {
+    width: 99%;
+  }
+  .inlineBlockHijo1 {
+    width: 70%;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
