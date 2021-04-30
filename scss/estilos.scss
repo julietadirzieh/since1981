@@ -222,28 +222,43 @@ div table{
 }
 
 
-/*caracteristicas del formulario del html "contacto"*/
+/*caracteristicas del html "contacto"*/
+.inlineBlockPadre{
+	text-align: center;
+	width: 100%;
+}
+
+.inlineBlockHijo{
+	display: inline-block;
+	margin: 0px auto;
+	padding: 0px 80px;
+	width: 50%;
+}
+
+.inlineBlockHijo1{
+	display: inline-block;
+	width: 40%;
+}
+
 form{
-	width: 400px;
 	padding: 1em;
 	border: 1px solid #CCC;
 	border-radius: 1em;
-	text-align: left;
-	text-justify:auto;
-	margin: 0px 50px;
 	background-color: #f1f1f1;
+	text-align: left;
 }
 
-.paraHacerloInline{
-	display: inline-block;
-	margin: 0px 120px;
-	text-align: center;
-}
+iframe{
+	border-radius: 1em;
+	border: 1px solid #CCC;
+	width: 100%;
+	height: 300px;
+}	
 
 /*usé mapas y each para darle color a los botones*/
 $contactos: (
 	enviar: $color-azul,
-	limpiar: #2c5178
+	limpiar: $color-gris
 );
 
 @each $contacto, $color in $contactos{ 
@@ -256,38 +271,23 @@ $contactos: (
 	background-color: $color-gris;
 	border-radius: 0.5em;
 	border: 1px solid #CCC;
-}
-
-/*para que al pasar el mouse, se vea más grande el espacio para escribir en form*/
-.agrandar{
-	width: 150px;
-	transition: all 1s;
-}
-
-.agrandar:focus{
-	width: 200px;
-	font-size: 1.2rem;
+	width: 100%;
 }
 
 /*para que al pasar el mouse por el botón, se agrande el ancho del boton*/
-input.boton{
-	width: 150px;
+.botonEnviar{
+	width: 50%;
 	transition: width 0s;
 	color: $color-gris;
 	border-radius: 1em;
 	border: 1px solid #CCC;
 }
 
-input.boton:hover{
-	width: 200px;
+.botonEnviar:hover{
+	width: 55%;
 }
 
-iframe{
-	width:400px;
-	height:250px;
-	border-radius: 1em;
-	margin: 0px 0px 50px 0px;
-}
+
 
 /*responsive en pantallas de entre 480px a 780px*/
 @media screen and (min-width:480px) and (max-width:780px)
@@ -367,6 +367,15 @@ iframe{
 		height: 200px;
 		padding: 8px;
 	}
+
+	.inlineBlockHijo{
+		width: 90%;
+	}
+	
+	.inlineBlockHijo1{
+		width: 70%;
+	}
+	
 }
 
 
@@ -464,5 +473,13 @@ iframe{
 		width: 150px;
 		height: 150px;
 		padding: 5px;
+	}
+
+	.inlineBlockHijo{
+		width: 99%;
+	}
+	
+	.inlineBlockHijo1{
+		width: 70%;
 	}
 }
