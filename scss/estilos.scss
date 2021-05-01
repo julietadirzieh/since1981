@@ -59,7 +59,7 @@ a.subrayado{
 
 /*esto es para establecer un máximo de ancho al carrusel en el "index"*/
 .carrusel{
-	width: 80%;
+	width: 85%;
 	margin: 10px auto 20px auto;
 }
 
@@ -112,15 +112,14 @@ section article{
 
 .recuadroDeNosotros__parrafo {
 	line-height: 40px;
+	font-size: $subtitle-size;
 	margin: 30px;
-	font-size: 1.2em;
 	text-align: center;
 }
 
 .recuadroDeNosotros__parrafo--titulo {
 	@extend.recuadroDeNosotros__parrafo;
-	font-size: $subtitle-size;
-	font-style: bold;
+	font-size: 1.8em;
 }
 
 /*esto es grids para el html de "productos"*/
@@ -231,12 +230,13 @@ div table{
 .inlineBlockHijo{
 	display: inline-block;
 	margin: 0px auto;
-	padding: 0px 80px;
+	padding: 0px 40px;
 	width: 50%;
 }
 
 .inlineBlockHijo1{
 	display: inline-block;
+	padding: 0px 40px;
 	width: 40%;
 }
 
@@ -357,9 +357,13 @@ $contactos: (
 	}
 
 	.recuadroDeNosotros__parrafo {
-		line-height: 26px;
+		line-height: 30px;
 		margin: 20px;
 		font-size: $letter-size;
+	}
+
+	.recuadroDeNosotros__parrafo--titulo {
+		font-size: $subtitle-size;
 	}
 
 	.imagenPaletaDeColores{
@@ -464,9 +468,13 @@ $contactos: (
 	}
 
 	.recuadroDeNosotros__parrafo {
-		line-height: 13px;
+		line-height: 20px;
 		margin: 10px;
 		font-size: 0.8em;
+	}
+
+	.recuadroDeNosotros__parrafo--titulo {
+		font-size: $letter-size;
 	}
 
 	.imagenPaletaDeColores{
