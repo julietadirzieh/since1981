@@ -66,7 +66,7 @@ a.subrayado{
 /*esto es lo genérico para las secciones*/
 section{
 	display: flex;
-	margin-top: 10px;
+	padding-bottom: 20px;
 	line-height: 25px;
 	justify-content: space-around;
 	width:100%;
@@ -78,6 +78,27 @@ section article{
 	padding: 10px;
 }
 
+.iconosIndex{
+	width: 150px;
+	height: 150px;
+	padding: 5px;
+} 
+
+.fondoTela{
+	background-image: url(../img/fondonosotros.png);
+}
+
+.fondoSeccionIndex{
+	background-image: url(../img/rollos.png);
+	height: 400px;
+	max-width: 100%;
+} 
+
+.fondoSeccion2Index{
+		background-image: url(../img/camisas.png);
+		height: 400px;
+		max-width: 100%;
+} 
 
 /*esto es lo genérico para el contenido principal en html "nosotros"*/
 .contenedor {
@@ -87,7 +108,7 @@ section article{
 	line-height: 25px;
 
 	.recuadroDeNosotros {
-		background-image: url(../img/fondonosotros.jpg);
+		background-image: url(../img/fondonosotros.png);
 		border-radius: 15px;
 		padding: 20px;
 		align-items: center; /*para que esté centrado en el medio del recuadro*/
@@ -119,7 +140,7 @@ section article{
 
 .recuadroDeNosotros__parrafo--titulo {
 	@extend.recuadroDeNosotros__parrafo;
-	font-size: 1.8em;
+	font-size: 1.6em;
 }
 
 /*esto es grids para el html de "productos"*/
@@ -244,7 +265,7 @@ form{
 	padding: 1em;
 	border: 1px solid #CCC;
 	border-radius: 1em;
-	background-color: #f1f1f1;
+	background-image: url(../img/fondonosotros.png);
 	text-align: left;
 }
 
@@ -292,6 +313,53 @@ $contactos: (
 /*responsive en pantallas de entre 480px a 780px*/
 @media screen and (min-width:480px) and (max-width:780px)
 {
+	.iconosIndex{
+		width: 80px;
+		height: 80px;
+		padding: 5px;
+	} 
+	
+	.fondoTela{
+		background-image: url(../img/fondonosotros.png);
+		padding: 30px;
+	}
+
+	.fondoSeccionIndex{
+		height: 200px;
+	} 
+	
+	.fondoSeccion2Index{
+		height: 200px;
+	} 
+
+	.contenedor {
+		width: 100%;
+		height: auto;
+		margin: 0px;
+	}
+	
+	.recuadroDeNosotros__img{
+		width: 300px;
+		height: 175px;
+		padding: 8px;
+	}
+	
+	.recuadroDeNosotros__video {
+		width: 300px;
+		height: 175px;
+		padding: 8px;
+	}
+
+	.recuadroDeNosotros__parrafo {
+		line-height: 30px;
+		margin: 20px;
+		font-size: $letter-size;
+	}
+
+	.recuadroDeNosotros__parrafo--titulo {
+		font-size: $subtitle-size;
+	}
+
 	#grilla{
 		display:grid;
 		grid-template-areas: 
@@ -338,34 +406,6 @@ $contactos: (
 		grid-area: camisas;
 	}
 
-	.contenedor {
-		width: 100%;
-		height: auto;
-		margin: 0px;
-	}
-	
-	.recuadroDeNosotros__img{
-		width: 300px;
-		height: 175px;
-		padding: 8px;
-	}
-	
-	.recuadroDeNosotros__video {
-		width: 300px;
-		height: 175px;
-		padding: 8px;
-	}
-
-	.recuadroDeNosotros__parrafo {
-		line-height: 30px;
-		margin: 20px;
-		font-size: $letter-size;
-	}
-
-	.recuadroDeNosotros__parrafo--titulo {
-		font-size: $subtitle-size;
-	}
-
 	.imagenPaletaDeColores{
 		width: 200px;
 		height: 200px;
@@ -401,6 +441,50 @@ $contactos: (
 		line-height: 10px;
 		font-size: 0.8em;
 		text-decoration: underline;
+	}
+
+	.iconosIndex{
+		width: 80px;
+		height: 80px;
+		padding: 5px;
+	} 
+
+	.fondoSeccionIndex{
+		visibility: hidden;
+		display: none;
+	} 
+	
+	.fondoSeccion2Index{
+		visibility: hidden;
+		display: none;
+	} 
+
+	.contenedor {
+		width: 100%;
+		height: auto;
+		margin: 0px;
+	}
+	
+	.recuadroDeNosotros__img {
+		width: 150px;
+		height: 100px;
+		padding: 0px;
+	}
+	
+	.recuadroDeNosotros__video {
+		width: 200px;
+		height: 100px;
+		padding: 0px;
+	}
+
+	.recuadroDeNosotros__parrafo {
+		line-height: 20px;
+		margin: 10px;
+		font-size: 0.8em;
+	}
+
+	.recuadroDeNosotros__parrafo--titulo {
+		font-size: $letter-size;
 	}
 
 	#grilla{
@@ -449,34 +533,6 @@ $contactos: (
 		grid-area: camisas;
 	}
 
-	.contenedor {
-		width: 100%;
-		height: auto;
-		margin: 0px;
-	}
-	
-	.recuadroDeNosotros__img {
-		width: 150px;
-		height: 100px;
-		padding: 0px;
-	}
-	
-	.recuadroDeNosotros__video {
-		width: 200px;
-		height: 100px;
-		padding: 0px;
-	}
-
-	.recuadroDeNosotros__parrafo {
-		line-height: 20px;
-		margin: 10px;
-		font-size: 0.8em;
-	}
-
-	.recuadroDeNosotros__parrafo--titulo {
-		font-size: $letter-size;
-	}
-
 	.imagenPaletaDeColores{
 		width: 150px;
 		height: 150px;
@@ -491,3 +547,6 @@ $contactos: (
 		width: 70%;
 	}
 }
+
+
+
