@@ -74,6 +74,8 @@ a.h1 {
   background: -webkit-gradient(linear, left top, left bottom, from(#d9d9d9), to(#f8f8f8));
   background: linear-gradient(to bottom, #d9d9d9, #f8f8f8);
   text-align: center;
+  padding: 0px;
+  margin: 0px;
 }
 
 .column {
@@ -227,7 +229,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10px;
+  padding-bottom: 20px;
   line-height: 25px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -241,6 +243,28 @@ section article {
   padding: 10px;
 }
 
+.iconosIndex {
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+}
+
+.fondoTela {
+  background-image: url(../img/fondonosotros.png);
+}
+
+.fondoSeccionIndex {
+  background-image: url(../img/rollos.png);
+  height: 400px;
+  max-width: 100%;
+}
+
+.fondoSeccion2Index {
+  background-image: url(../img/camisas.png);
+  height: 400px;
+  max-width: 100%;
+}
+
 /*esto es lo genérico para el contenido principal en html "nosotros"*/
 .contenedor {
   width: 80%;
@@ -250,7 +274,7 @@ section article {
 }
 
 .contenedor .recuadroDeNosotros {
-  background-image: url(../img/fondonosotros.jpg);
+  background-image: url(../img/fondonosotros.png);
   border-radius: 15px;
   padding: 20px;
   -webkit-box-align: center;
@@ -285,7 +309,7 @@ section article {
 }
 
 .recuadroDeNosotros__parrafo--titulo {
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 
 /*esto es grids para el html de "productos"*/
@@ -423,7 +447,7 @@ form {
   padding: 1em;
   border: 1px solid #CCC;
   border-radius: 1em;
-  background-color: #f1f1f1;
+  background-image: url(../img/fondonosotros.png);
   text-align: left;
 }
 
@@ -466,6 +490,44 @@ iframe {
 
 /*responsive en pantallas de entre 480px a 780px*/
 @media screen and (min-width: 480px) and (max-width: 780px) {
+  .iconosIndex {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+  }
+  .fondoTela {
+    background-image: url(../img/fondonosotros.png);
+    padding: 30px;
+  }
+  .fondoSeccionIndex {
+    height: 200px;
+  }
+  .fondoSeccion2Index {
+    height: 200px;
+  }
+  .contenedor {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+  }
+  .recuadroDeNosotros__img {
+    width: 300px;
+    height: 175px;
+    padding: 8px;
+  }
+  .recuadroDeNosotros__video {
+    width: 300px;
+    height: 175px;
+    padding: 8px;
+  }
+  .recuadroDeNosotros__parrafo, .recuadroDeNosotros__parrafo--titulo {
+    line-height: 30px;
+    margin: 20px;
+    font-size: 1em;
+  }
+  .recuadroDeNosotros__parrafo--titulo {
+    font-size: 1.3em;
+  }
   #grilla {
     display: -ms-grid;
     display: grid;
@@ -515,29 +577,6 @@ iframe {
     -ms-grid-row: 7;
     -ms-grid-column: 1;
     grid-area: camisas;
-  }
-  .contenedor {
-    width: 100%;
-    height: auto;
-    margin: 0px;
-  }
-  .recuadroDeNosotros__img {
-    width: 300px;
-    height: 175px;
-    padding: 8px;
-  }
-  .recuadroDeNosotros__video {
-    width: 300px;
-    height: 175px;
-    padding: 8px;
-  }
-  .recuadroDeNosotros__parrafo, .recuadroDeNosotros__parrafo--titulo {
-    line-height: 30px;
-    margin: 20px;
-    font-size: 1em;
-  }
-  .recuadroDeNosotros__parrafo--titulo {
-    font-size: 1.3em;
   }
   .imagenPaletaDeColores {
     width: 200px;
@@ -567,6 +606,42 @@ iframe {
     font-size: 0.8em;
     text-decoration: underline;
   }
+  .iconosIndex {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+  }
+  .fondoSeccionIndex {
+    visibility: hidden;
+    display: none;
+  }
+  .fondoSeccion2Index {
+    visibility: hidden;
+    display: none;
+  }
+  .contenedor {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+  }
+  .recuadroDeNosotros__img {
+    width: 150px;
+    height: 100px;
+    padding: 0px;
+  }
+  .recuadroDeNosotros__video {
+    width: 200px;
+    height: 100px;
+    padding: 0px;
+  }
+  .recuadroDeNosotros__parrafo, .recuadroDeNosotros__parrafo--titulo {
+    line-height: 20px;
+    margin: 10px;
+    font-size: 0.8em;
+  }
+  .recuadroDeNosotros__parrafo--titulo {
+    font-size: 1em;
+  }
   #grilla {
     display: -ms-grid;
     display: grid;
@@ -616,29 +691,6 @@ iframe {
     -ms-grid-row: 7;
     -ms-grid-column: 1;
     grid-area: camisas;
-  }
-  .contenedor {
-    width: 100%;
-    height: auto;
-    margin: 0px;
-  }
-  .recuadroDeNosotros__img {
-    width: 150px;
-    height: 100px;
-    padding: 0px;
-  }
-  .recuadroDeNosotros__video {
-    width: 200px;
-    height: 100px;
-    padding: 0px;
-  }
-  .recuadroDeNosotros__parrafo, .recuadroDeNosotros__parrafo--titulo {
-    line-height: 20px;
-    margin: 10px;
-    font-size: 0.8em;
-  }
-  .recuadroDeNosotros__parrafo--titulo {
-    font-size: 1em;
   }
   .imagenPaletaDeColores {
     width: 150px;
