@@ -43,11 +43,21 @@ a.h1{
     margin-bottom: -9px;
     padding-top: 5px;
     padding-bottom: 5px;
- }
+}
+
+.imgLogo{
+    max-width: 60px;
+    max-height: 60px;
+    margin: 20px;
+}
 
 /*esto es para hacer responsive el titulo de la marca*/
 @media screen and (max-width: 480px){
     a.h1{
         font-size: 1.8em;
+    }
+
+    .imgLogo{
+        margin: 10px;
     }
 }
