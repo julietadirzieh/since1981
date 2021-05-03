@@ -1,4 +1,4 @@
-/*esto es el bloque final*/
+/*esto es el bloque final de todos los htmls*/
 .seccionFinal{
 	background: $background-color-grey;
 	text-align: center;
@@ -18,11 +18,12 @@
 
 /*esto es un elemento del bloque final*/
 .seccionFinal__texto{
-color: $color-azul;
-text-transform: none;
-text-decoration: none;
-line-height: 15px;
-padding: 0px;
+	color: $color-azul;
+	text-transform: none;
+	text-decoration: none;
+	line-height: 15px;
+	padding: 0px;
+	font-size: $letter-size;
 } 
 
 /*esto es una modificación del elemento del bloque final*/
@@ -34,13 +35,13 @@ padding: 0px;
 	line-height: 25px;
 } 
 
-/*para hacer responsive los iconos*/
 .icono{
 	width: 20px;
 	height: 20px;
 	margin: 5px;
 } 
 
+/*para hacer responsive los iconos*/
 @media screen and (min-width:480px) and (max-width:780px)
 {
 	.icono{
@@ -49,6 +50,7 @@ padding: 0px;
 		margin: 5px;
 	} 
 }
+
 @media screen and (max-width: 480px)
 {
 	.icono{
@@ -56,6 +58,7 @@ padding: 0px;
 		height: 10px;
 		margin: 2px;
 	} 
+
 	.seccionFinal{
         width: auto;
 		height: 10%;
@@ -65,13 +68,14 @@ padding: 0px;
 		width: 100%;
 		height: 10%;
 	}
+
 	.seccionFinal__texto{
 		font-size: 0.8em;
 		line-height: 10px;
-		} 
+	} 
 		
-		.seccionFinal__texto--titulo{
-			font-size: $letter-size;
-			line-height: 12px;
-		} 
+	.seccionFinal__texto--titulo{
+		font-size: $letter-size;
+		line-height: 12px;
+	} 
 }

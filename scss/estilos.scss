@@ -1,11 +1,12 @@
-/*variables*/
+/*para importar otros scss*/
 @import "colores";
 @import "general";
 @import "header";
 @import "bloquefinal";
 @import "footer";
 
-@mixin fontStyle($font-size) {
+/*parametro del estilo de las letras*/
+@mixin fontStyle($font-size){
 	color: $color-azul;
 	text-align: center;
 	margin: 15px;
@@ -28,14 +29,20 @@ h1{
 	100% { opacity: 1; }
 }
 
-/*para definir los subtitulos de todas las paginas*/
+/*para definir los subtitulos y letras*/
 h2{ 	
-	padding: 10px;
 	@include fontStyle($subtitle-size);
 } 
 
 .detalleCombo{ 	
-	@include fontStyle($letter-size);
+	padding-bottom: 20px;
+	@include fontStyle(0.8em);
+} 
+
+h3{ 	
+	font-weight: bold;
+	text-transform: uppercase;
+	@include fontStyle(1.3em);
 } 
 
 /*esto es para los enlaces que quiero que estén en azul y cuando se pasa el mouse en blanco*/
@@ -51,54 +58,54 @@ a.deAzulABlanco:hover{
 	color:white !important;
 }
 
-/*esto es para el enlace del "index" para reservar el combo*/
-a.subrayado{
-	@extend a.deAzulABlanco;
-	text-decoration: underline;
-}
-
 /*esto es para establecer un máximo de ancho al carrusel en el "index"*/
 .carrusel{
-	width: 85%;
+	width: 90%;
 	margin: 10px auto 20px auto;
 }
 
 /*esto es lo genérico para las secciones*/
 section{
 	display: flex;
-	padding-bottom: 20px;
 	line-height: 25px;
 	justify-content: space-around;
-	width:100%;
+	width:99%;
 }
 
 section article{
 	flex-wrap: wrap;
 	text-align: center;
 	padding: 10px;
+	padding-bottom: 20px;
+}
+
+/*para definir las secciones del "index"*/
+.fondoTela{
+	background-image: url(../img/fondonosotros.png);
+	max-width: 100%;
+	width: 100%;
+	padding-bottom: 20px;
 }
 
 .iconosIndex{
 	width: 150px;
 	height: 150px;
-	padding: 5px;
+	padding-top: 10px;
 } 
 
-.fondoTela{
-	background-image: url(../img/fondonosotros.png);
-}
+.seccionDelIndex{
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	padding: 5px 20px;
+} 
 
-.fondoSeccionIndex{
-	background-image: url(../img/rollos.png);
-	height: 400px;
+.fotosDeLaSeccionDelIndex{
 	max-width: 100%;
+	padding: 0px;
+	margin: 0px;
 } 
 
-.fondoSeccion2Index{
-		background-image: url(../img/camisas.png);
-		height: 400px;
-		max-width: 100%;
-} 
 
 /*esto es lo genérico para el contenido principal en html "nosotros"*/
 .contenedor {
@@ -111,11 +118,11 @@ section article{
 		background-image: url(../img/fondonosotros.png);
 		border-radius: 15px;
 		padding: 20px;
-		align-items: center; /*para que esté centrado en el medio del recuadro*/
+		align-items: center;
 		margin-bottom: 20px; 
 		display: flex;
-		overflow: auto; 
-}
+		overflow: auto; 	
+	}
 }
 
 .recuadroDeNosotros__img {
@@ -142,6 +149,7 @@ section article{
 	@extend.recuadroDeNosotros__parrafo;
 	font-size: 1.6em;
 }
+
 
 /*esto es grids para el html de "productos"*/
 #grilla{
@@ -194,13 +202,12 @@ section article{
 	margin-top: 10px;
 } 
 
-
 /*esta es para las imágenes de "productos"*/
 .imagenDeProductos{
 	max-width: 100%;
 	width: 300px;
 	height: 300px;
-	padding: 10px;
+	cursor: pointer;
 }
 
 
@@ -226,6 +233,12 @@ div table{
 	font-style: italic;
 } 
 
+/*esto es para que los enlaces de las preguntas frecuentes se vean para clickear*/
+a.subrayado{
+	@extend a.deAzulABlanco;
+	text-decoration: underline;
+}
+
 /*para que las imágenes se achiquen según las pantallas en "preguntas frecuentes"*/
 .imagenPaletaDeColores{
 	width: 300px;
@@ -235,8 +248,8 @@ div table{
 	cursor: pointer;
 }
 
-/*el modal de la imagen de las paletas de colores*/
-#modalPaleta1, #modalPaleta2, #modalPaleta3, #modalNosotros, .modal-img{
+/*para que las imagenes de los modales sean responsive*/
+#modalPaleta1, #modalPaleta2, #modalPaleta3, #modalNosotros, #modalProductos1, #modalProductos2, #modalProductos3, #modalProductos4, #modalProductos5, .modal-img{
 	width: 100%;
 	max-width: 100%;
 }
@@ -258,7 +271,7 @@ div table{
 .inlineBlockHijo1{
 	display: inline-block;
 	padding: 0px 40px;
-	width: 40%;
+	width: 45%;
 }
 
 form{
@@ -276,7 +289,7 @@ iframe{
 	height: 300px;
 }	
 
-/*usé mapas y each para darle color a los botones*/
+/*usé mapas y each para darle color a los botones del formulario*/
 $contactos: (
 	enviar: $color-azul,
 	limpiar: $color-gris
@@ -295,7 +308,7 @@ $contactos: (
 	width: 100%;
 }
 
-/*para que al pasar el mouse por el botón, se agrande el ancho del boton*/
+/*para que al pasar el mouse por el boton, se agrande el ancho del boton*/
 .botonEnviar{
 	width: 50%;
 	transition: width 0s;
@@ -313,23 +326,22 @@ $contactos: (
 /*responsive en pantallas de entre 480px a 780px*/
 @media screen and (min-width:480px) and (max-width:780px)
 {
+	h1 {
+		font-size: 1.8em;
+	}
+
+	h2{
+		font-size: 1.3em;
+	}
+
 	.iconosIndex{
 		width: 80px;
 		height: 80px;
 		padding: 5px;
 	} 
-	
-	.fondoTela{
-		background-image: url(../img/fondonosotros.png);
-		padding: 30px;
-	}
 
-	.fondoSeccionIndex{
-		height: 200px;
-	} 
-	
-	.fondoSeccion2Index{
-		height: 200px;
+	.seccionDelIndex{
+		padding: 15px;
 	} 
 
 	.contenedor {
@@ -340,7 +352,7 @@ $contactos: (
 	
 	.recuadroDeNosotros__img{
 		width: 300px;
-		height: 175px;
+		height: 200px;
 		padding: 8px;
 	}
 	
@@ -417,24 +429,23 @@ $contactos: (
 	}
 	
 	.inlineBlockHijo1{
-		width: 70%;
+		width: 90%;
 	}
-	
 }
 
-
+/*responsive en pantallas de menos de 480px*/
 @media screen and (max-width: 480px)
 {
 	h1 {
-		font-size: 2em;
+		font-size: 1.6em;
 	}
 
 	h2{ 	
-		font-size: 1.5em;
+		font-size: $letter-size;
 	} 
 
 	.detalleCombo{
-		font-size: 0.8em;
+		font-size: 0.6em;
 	}
 
 	a.deAzulABlanco{
@@ -444,19 +455,18 @@ $contactos: (
 	}
 
 	.iconosIndex{
-		width: 80px;
-		height: 80px;
+		width: 50px;
+		height: 50px;
 		padding: 5px;
 	} 
 
-	.fondoSeccionIndex{
+	.fotosDeLaSeccionDelIndex{
 		visibility: hidden;
 		display: none;
 	} 
-	
-	.fondoSeccion2Index{
-		visibility: hidden;
-		display: none;
+
+	.seccionDelIndex{
+		padding: 30px;
 	} 
 
 	.contenedor {
@@ -544,7 +554,7 @@ $contactos: (
 	}
 	
 	.inlineBlockHijo1{
-		width: 70%;
+		width: 90%;
 	}
 }
 

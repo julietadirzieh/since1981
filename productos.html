@@ -74,39 +74,105 @@
 		</div>
 
 		<div id="grilla">
-			<!-- grids con todos los productos en 3 filas y 2 columnas para ≥768px, y 1 columna <768px -->
+			<!-- grids con todos los productos en 4 filas y 2 columnas para ≥768px, y en 7 filas y 1 columna para <768px -->
 
 			<div class="telabatistalisa">
-				<!-- primera columna del grids-->
-				<div class="card bg-light text-center border" style="width:18rem;">
+				<!-- primera columna del grids para todas las pantallas-->
+				<div class="card bg-light text-center" style="width:18rem;">
 					<!-- formato de card -->
-					<img class="card-img-top imagenDeProductos" src="img/batistalisa.jpeg" alt="">
 					<div class="card-body bg-light">
-						<h5 class="card-title">Batista Lisa</h5>
+						<!-- Boton del modal 1 de Productos -->
+						<button type="button" class="border-0" data-bs-toggle="modal" data-bs-target="#modalProductos1">
+							<img src="img/batistalisa.jpeg" alt="modal" class="imagenDeProductos">
+						</button>
+						<!-- Modal 1 de Productos -->
+						<div class="modal fade" id="modalProductos1" tabindex="-1" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<img src="img/batistalisa.jpeg" alt="modal" class="card-img-top modal-img">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">Cerrar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h5 class="card-title pt-3">Batista Lisa</h5>
 						<p class="card-text"><small class="text-muted">10 colores disponibles.</small></p>
 					</div>
 				</div>
 			</div>
 
 			<div class="telapoplinestampada">
-				<!-- primera columna de la segunda fila del grids-->
-				<div class="card bg-light text-center border" style="width:18rem;">
+				<!-- segunda columna de la primera fila del grids para ≥768px y cuarta fila para <768px-->
+				<div class="card bg-light text-center" style="width:18rem;">
 					<!-- formato de card -->
-					<img class="card-img-top imagenDeProductos" src="img/poplinestampado.png" alt="">
 					<div class="card-body bg-light">
-						<h5 class="card-title">Poplin</h5>
+						<!-- Boton del modal 2 de Productos -->
+						<button type="button" class="border-0" data-bs-toggle="modal" data-bs-target="#modalProductos2">
+							<img src="img/poplinestampado.png" alt="modal" class="imagenDeProductos">
+						</button>
+						<!-- Modal 2 de Productos -->
+						<div class="modal fade" id="modalProductos2" tabindex="-1" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<img src="img/poplinestampado.png" alt="modal" class="card-img-top modal-img">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">Cerrar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h5 class="card-title pt-3">Poplin</h5>
 						<p class="card-text"><small class="text-muted">Lisas y estampadas.</small></p>
 					</div>
 				</div>
 			</div>
 
 			<div class="telabatistaestampada">
-				<!-- segunda columna del grids-->
+				<!-- primera columna de la segunda fila del grids para ≥768px y segunda fila para <768px -->
 				<div class="card bg-light text-center border" style="width:18rem;">
 					<!-- formato de card -->
-					<img class="card-img-top imagenDeProductos" src="img/batistaestampada.jpg" alt="">
 					<div class="card-body bg-light">
-						<h5 class="card-title">Batista Estampada</h5>
+						<!-- Boton del modal 3 de Productos -->
+						<button type="button" class="border-0" data-bs-toggle="modal" data-bs-target="#modalProductos3">
+							<img src="img/batistaestampada.jpg" alt="modal" class="imagenDeProductos">
+						</button>
+						<!-- Modal 3 de Productos -->
+						<div class="modal fade" id="modalProductos3" tabindex="-1" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<img src="img/batistaestampada.jpg" alt="modal" class="card-img-top modal-img">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">Cerrar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h5 class="card-title pt-3">Batista Estampada</h5>
 						<p class="card-text"><small class="text-muted">Más de 20 diseños disponibles.</small>
 						</p>
 					</div>
@@ -114,34 +180,81 @@
 			</div>
 
 			<div class="telapoplinelastizadaestampada">
-				<!-- segunda columna de la segunda fila del grids-->
+				<!-- segunda columna de la segunda fila del grids para ≥768px y quinta fila para <768px -->
 				<div class="card bg-light text-center border" style="width:18rem;">
-					<img class="card-img-top imagenDeProductos" src="img/poplinelastizadoliso.png" alt="">
 					<!-- formato de card -->
 					<div class="card-body bg-light">
-						<h5 class="card-title">Poplin Elastizado</h5>
+						<!-- Boton del modal 4 de Productos -->
+						<button type="button" class="border-0" data-bs-toggle="modal" data-bs-target="#modalProductos4">
+							<img src="img/poplinelastizadoliso.png" alt="modal" class="imagenDeProductos">
+						</button>
+						<!-- Modal 4 de Productos -->
+						<div class="modal fade" id="modalProductos4" tabindex="-1" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<img src="img/poplinelastizadoliso.png" alt="modal"
+											class="card-img-top modal-img">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">Cerrar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h5 class="card-title pt-3">Poplin Elastizado</h5>
 						<p class="card-text"><small class="text-muted">Lisas y estampadas.</small></p>
 					</div>
 				</div>
 			</div>
 
-			<div class="descargarcatalogobatista" style="margin: 1em">
-				<!-- tercera fila del grids-->
+			<div class="descargarcatalogobatista">
+				<!-- primera columna de la tercera fila del grids para ≥768px y tercera fila para <768px -->
 				<a href="download/catalogo1since1981.pdf" download="Since 1981 Catalogo 1"
 					class="btn btn-outline-secondary deAzulABlanco">Descargar catálogo Batista</a>
 			</div>
-			<div class="descargarcatalogopoplin" style="margin: 1em">
-				<a href="download/catalogo1since1981.pdf" download="Since 1981 Catalogo 1"
+			<div class="descargarcatalogopoplin">
+				<!-- segunda columna de la tercera fila del grids para ≥768px y sexta fila para <768px -->
+				<a href="download/catalogo2since1981.pdf" download="Since 1981 Catalogo 2"
 					class="btn btn-outline-secondary deAzulABlanco">Descargar catálogo Poplin</a>
 			</div>
 
 			<div class="camisas">
-				<!-- cuarta fila del grids-->
+				<!-- columna de la cuarta fila del grids para ≥768px y septima fila para <768px -->
 				<h2 id="camisasxmayor">Camisas por mayor</h2>
 				<div class="card bg-light text-center border" style="width:18rem;">
-					<img src="img/camisas.jpeg" class="card-img-top imagenDeProductos" alt=""><!-- formato de card -->
+					<!-- formato de card -->
 					<div class="card-body bg-light">
-						<p class="card-text"><small class="text-muted">Contamos con más de 50 diseños exclusivos
+						<!-- Boton del modal 5 de Productos -->
+						<button type="button" class="border-0" data-bs-toggle="modal" data-bs-target="#modalProductos5">
+							<img src="img/camisas.jpeg" alt="modal" class="imagenDeProductos">
+						</button>
+						<!-- Modal 5 de Productos -->
+						<div class="modal fade" id="modalProductos5" tabindex="-1" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<img src="img/camisas.jpeg" alt="modal" class="card-img-top modal-img">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">Cerrar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p class="card-text pt-3"><small class="text-muted">Contamos con más de 50 diseños exclusivos
 								en variedad de colores.</small></p>
 					</div>
 				</div>
@@ -157,22 +270,18 @@
 			<div class="column">
 				<!-- Bloque 1-->
 				<h3 class="seccionFinal__texto--titulo">Categorías</h3>
-				<a href="#index" class="deAzulABlanco">
-					<p>Inicio</p>
-				</a>
-				<a href="productos.html" class="deAzulABlanco">
-					<p>Productos</p>
-				</a>
-				<a href="nosotros.html" class="deAzulABlanco">
-					<p>Nosotros</p>
-				</a>
-				<a href="preguntasfrecuentes.html" class="deAzulABlanco">
-					<p>Preguntas Frecuentes</p>
-				</a>
-				<a href="contacto.html" class="deAzulABlanco">
-					<p>Contacto</p>
-				</a>
+				<p class="seccionFinal__texto"><a href="index.html" class="deAzulABlanco">Inicio
+					</a></p>
+				<p class="seccionFinal__texto"><a href="nosotros.html" class="deAzulABlanco">
+						Nosotros</a></p>
+				<p class="seccionFinal__texto"><a href="#productos" class="deAzulABlanco">
+						Productos</a></p>
+				<p class="seccionFinal__texto"><a href="preguntasfrecuentes.html" class="deAzulABlanco">
+						Preguntas Frecuentes</a></p>
+				<p class="seccionFinal__texto"><a href="contacto.html" class="deAzulABlanco">
+						Contacto</a></p>
 			</div>
+
 			<div class="column">
 				<!-- Bloque 2-->
 				<h3 class="seccionFinal__texto--titulo">Contactános</h3>
@@ -183,12 +292,12 @@
 						C.A.B.A.</a>
 				</p>
 			</div>
+			
 			<div class="column">
 				<!-- Bloque 3-->
 				<h3 class="seccionFinal__texto--titulo">Sigamos conectados</h3>
 				<p class="seccionFinal__texto"><img src="img/whatsapp.png" alt="whatsapp" class="icono"><a
-					href="https://api.whatsapp.com/send?phone=5491152262165"
-					class="deAzulABlanco">Whatsapp</a></p>
+						href="https://api.whatsapp.com/send?phone=5491152262165" class="deAzulABlanco">Whatsapp</a></p>
 				<p class="seccionFinal__texto"><img src="img/insta.png" alt="insta" class="icono"><a
 						href="https://www.instagram.com/since1981textil/" class="deAzulABlanco">@since1981textil</a></p>
 				<p class="seccionFinal__texto"><img src="img/fb.png" alt="fb" class="icono"><a
@@ -201,7 +310,7 @@
 
 	<footer>
 		<!-- Footer -->
-		<p class="text-center">Copyright Since 1981 ®. Todos los derechos reservados.</p>
+		<p>Copyright Since 1981 ®. Todos los derechos reservados.</p>
 	</footer>
 
 	<!-- Popper & Bootsrap JS -->

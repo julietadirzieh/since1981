@@ -4,7 +4,6 @@ header{
     position: sticky;
     top:0px;
     width: 100%;
-    height: 18%;
     background: $background-color-blue;
     z-index: 1001;
 }
@@ -20,8 +19,6 @@ a.enlaces{
 	text-transform: uppercase;
 	color:$color-gris !important;
 	font-size: $letter-size;
-	font-family: 'Quattrocento Sans', sans-serif;
-	font-weight: 400;
 }
 
 /*esto es para que al pasar el mouse, cambie el color el fondo*/
@@ -34,7 +31,7 @@ a.enlaces:hover{
 a.h1{
     font-size: $title-size;
     color: $color-gris !important;
-    }
+}
     
 /*esto es para que cuando se abra la solapa del submenu, tenga el mismo fondo que el menu*/
 .fondoAzul{
@@ -46,5 +43,11 @@ a.h1{
     margin-bottom: -9px;
     padding-top: 5px;
     padding-bottom: 5px;
-    }
+ }
 
+/*esto es para hacer responsive el titulo de la marca*/
+@media screen and (max-width: 480px){
+    a.h1{
+        font-size: 1.8em;
+    }
+}
