@@ -10,7 +10,8 @@ header{
 
 nav{
 	padding: 20px;
-	justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 /*esto es el menú*/
@@ -54,10 +55,12 @@ a.h1{
 /*esto es para hacer responsive el titulo de la marca*/
 @media screen and (max-width: 480px){
     a.h1{
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 
     .imgLogo{
+        max-width: 40px;
+        max-height: 40px;
         margin: 10px;
     }
 }
