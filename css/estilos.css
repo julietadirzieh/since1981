@@ -281,9 +281,6 @@ section article {
 }
 
 .seccionDelIndex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -291,6 +288,13 @@ section article {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0px auto;
+  margin: 0px auto;
+}
+
+.fotosDeLaSeccionDelIndex {
+  max-width: 100%;
+  width: 100%;
 }
 
 /*esto es lo genérico para el contenido principal en html "nosotros"*/

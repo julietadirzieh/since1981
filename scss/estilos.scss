@@ -94,10 +94,16 @@ section article{
 } 
 
 .seccionDelIndex{
-	display: flex;
 	align-items: center;
 	text-align: center;
 	justify-content: center;
+	padding: 0px auto;
+	margin: 0px auto;
+} 
+
+.fotosDeLaSeccionDelIndex{
+	max-width: 100%;
+	width: 100%;
 } 
 
 
