@@ -94,16 +94,10 @@ section article{
 } 
 
 .seccionDelIndex{
+	display: flex;
 	align-items: center;
 	text-align: center;
 	justify-content: center;
-	padding: 5px 20px;
-} 
-
-.fotosDeLaSeccionDelIndex{
-	max-width: 100%;
-	padding: 0px;
-	margin: 0px;
 } 
 
 
@@ -119,7 +113,6 @@ section article{
 		border-radius: 15px;
 		padding: 20px;
 		align-items: center;
-		justify-content: center;
 		margin-bottom: 20px; 
 		display: flex;
 		overflow: auto; 	
