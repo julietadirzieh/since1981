@@ -437,6 +437,10 @@ $contactos: (
 		font-size: $letter-size;
 	} 
 
+	h3{ 
+	text-transform: none;
+	}
+
 	.detalleCombo{
 		font-size: 0.6em;
 	}
@@ -445,6 +449,10 @@ $contactos: (
 		line-height: 10px;
 		font-size: 0.8em;
 		text-decoration: underline;
+	}
+
+	section{
+		justify-content: center;
 	}
 
 	.iconosIndex{
@@ -465,8 +473,8 @@ $contactos: (
 	}
 	
 	.recuadroDeNosotros__img {
-		width: 150px;
-		height: 100px;
+		width: 100px;
+		height: 80px;
 		padding: 0px;
 	}
 	

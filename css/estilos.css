@@ -628,6 +628,9 @@ iframe {
   h2 {
     font-size: 1em;
   }
+  h3 {
+    text-transform: none;
+  }
   .detalleCombo {
     font-size: 0.6em;
   }
@@ -635,6 +638,11 @@ iframe {
     line-height: 10px;
     font-size: 0.8em;
     text-decoration: underline;
+  }
+  section {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .iconosIndex {
     width: 50px;
@@ -651,8 +659,8 @@ iframe {
     margin: 0px;
   }
   .recuadroDeNosotros__img {
-    width: 150px;
-    height: 100px;
+    width: 100px;
+    height: 80px;
     padding: 0px;
   }
   .recuadroDeNosotros__video {
