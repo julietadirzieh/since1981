@@ -92,6 +92,7 @@ a.h1 {
   text-align: center;
   padding: 0px;
   margin: 0px;
+  border-top: 1px solid #1e3752;
 }
 
 .column {
@@ -212,7 +213,7 @@ h2 {
 }
 
 .detalleCombo {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   color: #1e3752;
   text-align: center;
   margin: 15px;
@@ -252,49 +253,41 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  line-height: 25px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 99%;
 }
 
 section article {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  text-align: center;
+  width: 100%;
+  line-height: 20px;
   padding: 10px;
-  padding-bottom: 20px;
 }
 
 /*para definir las secciones del "index"*/
 .fondoTela {
   background-image: url(../img/fondonosotros.png);
-  max-width: 100%;
   width: 100%;
-  padding-bottom: 20px;
+  border-top: 2px solid #CCC;
+  border-bottom: 2px solid #CCC;
 }
 
 .iconosIndex {
-  width: 150px;
-  height: 150px;
-  padding-top: 10px;
-}
-
-.seccionDelIndex {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0px auto;
-  margin: 0px auto;
+  width: 100px;
+  height: 100px;
+  padding-top: 5px;
 }
 
 .fotosDeLaSeccionDelIndex {
   max-width: 100%;
-  width: 100%;
+  padding: 10px;
 }
 
 /*esto es lo genérico para el contenido principal en html "nosotros"*/
@@ -464,6 +457,7 @@ a.subrayado {
 .inlineBlockPadre {
   text-align: center;
   width: 100%;
+  padding-bottom: 50px;
 }
 
 .inlineBlockHijo {
@@ -521,7 +515,7 @@ iframe {
 }
 
 .botonEnviar:hover {
-  width: 55%;
+  width: 60%;
 }
 
 /*responsive en pantallas de entre 480px a 780px*/
@@ -537,8 +531,8 @@ iframe {
     height: 80px;
     padding: 5px;
   }
-  .seccionDelIndex {
-    padding: 15px;
+  .fotosDeLaSeccionDelIndex {
+    padding: 10px;
   }
   .contenedor {
     width: 100%;
@@ -650,9 +644,6 @@ iframe {
   .fotosDeLaSeccionDelIndex {
     visibility: hidden;
     display: none;
-  }
-  .seccionDelIndex {
-    padding: 30px;
   }
   .contenedor {
     width: 100%;

@@ -35,7 +35,7 @@ h2{
 } 
 
 .detalleCombo{ 	
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	@include fontStyle(0.8em);
 } 
 
@@ -67,43 +67,35 @@ a.deAzulABlanco:hover{
 /*esto es lo genérico para las secciones*/
 section{
 	display: flex;
-	line-height: 25px;
+	flex-flow: row wrap;
 	justify-content: space-around;
+	align-items: center;
 	width:99%;
 }
 
 section article{
-	flex-wrap: wrap;
-	text-align: center;
+	width: 100%;
+	line-height: 20px;
 	padding: 10px;
-	padding-bottom: 20px;
 }
 
 /*para definir las secciones del "index"*/
 .fondoTela{
 	background-image: url(../img/fondonosotros.png);
-	max-width: 100%;
 	width: 100%;
-	padding-bottom: 20px;
+	border-top: 2px solid #CCC;
+	border-bottom: 2px solid #CCC;
 }
 
 .iconosIndex{
-	width: 150px;
-	height: 150px;
-	padding-top: 10px;
-} 
-
-.seccionDelIndex{
-	align-items: center;
-	text-align: center;
-	justify-content: center;
-	padding: 0px auto;
-	margin: 0px auto;
+	width: 100px;
+	height: 100px;
+	padding-top: 5px;
 } 
 
 .fotosDeLaSeccionDelIndex{
 	max-width: 100%;
-	width: 100%;
+	padding: 10px;
 } 
 
 
@@ -259,6 +251,7 @@ a.subrayado{
 .inlineBlockPadre{
 	text-align: center;
 	width: 100%;
+	padding-bottom: 50px;
 }
 
 .inlineBlockHijo{
@@ -318,7 +311,7 @@ $contactos: (
 }
 
 .botonEnviar:hover{
-	width: 55%;
+	width: 60%;
 }
 
 
@@ -340,9 +333,9 @@ $contactos: (
 		padding: 5px;
 	} 
 
-	.seccionDelIndex{
-		padding: 15px;
-	} 
+	.fotosDeLaSeccionDelIndex{
+		padding: 10px;
+	}	
 
 	.contenedor {
 		width: 100%;
@@ -463,11 +456,7 @@ $contactos: (
 	.fotosDeLaSeccionDelIndex{
 		visibility: hidden;
 		display: none;
-	} 
-
-	.seccionDelIndex{
-		padding: 30px;
-	} 
+	}  
 
 	.contenedor {
 		width: 100%;
