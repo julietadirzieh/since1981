@@ -356,13 +356,13 @@ $contactos: (
 	}
 
 	.recuadroDeNosotros__parrafo {
-		line-height: 30px;
+		line-height: 20px;
 		margin: 20px;
 		font-size: $letter-size;
 	}
 
 	.recuadroDeNosotros__parrafo--titulo {
-		font-size: $subtitle-size;
+		font-size: $letter-size;
 	}
 
 	#grilla{
@@ -378,9 +378,8 @@ $contactos: (
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(7,1/2fr);
 		grid-gap:10px;
-		justify-items: center;
 		align-items: center;
-		margin: 0;
+		margin: 0px;
 	}
 
 	.telabatistalisa{

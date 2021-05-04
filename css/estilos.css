@@ -550,12 +550,12 @@ iframe {
     padding: 8px;
   }
   .recuadroDeNosotros__parrafo, .recuadroDeNosotros__parrafo--titulo {
-    line-height: 30px;
+    line-height: 20px;
     margin: 20px;
     font-size: 1em;
   }
   .recuadroDeNosotros__parrafo--titulo {
-    font-size: 1.5em;
+    font-size: 1em;
   }
   #grilla {
     display: -ms-grid;
@@ -566,11 +566,10 @@ iframe {
     -ms-grid-rows: (1/2fr)[7];
         grid-template-rows: repeat(7, 1/2fr);
     grid-gap: 10px;
-    justify-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0;
+    margin: 0px;
   }
   .telabatistalisa {
     -ms-grid-row: 1;
