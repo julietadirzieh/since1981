@@ -333,10 +333,6 @@ $contactos: (
 		padding: 5px;
 	} 
 
-	.fotosDeLaSeccionDelIndex{
-		padding: 10px;
-	}	
-
 	.contenedor {
 		width: 100%;
 		height: auto;
@@ -346,13 +342,13 @@ $contactos: (
 	.recuadroDeNosotros__img{
 		width: 300px;
 		height: 200px;
-		padding: 8px;
+		padding: 2px;
 	}
 	
 	.recuadroDeNosotros__video {
 		width: 300px;
 		height: 175px;
-		padding: 8px;
+		padding: 2px;
 	}
 
 	.recuadroDeNosotros__parrafo {
@@ -416,6 +412,10 @@ $contactos: (
 		padding: 8px;
 	}
 
+	.inlineBlockPadre{
+		padding-bottom: 25px;
+	}
+
 	.inlineBlockHijo{
 		width: 90%;
 	}
@@ -437,7 +437,7 @@ $contactos: (
 	} 
 
 	h3{ 
-	text-transform: none;
+		text-transform: none;
 	}
 
 	.detalleCombo{
@@ -447,11 +447,16 @@ $contactos: (
 	a.deAzulABlanco{
 		line-height: 10px;
 		font-size: 0.8em;
+	}
+
+	a.subrayadoChico{
 		text-decoration: underline;
 	}
 
+
 	section{
 		justify-content: center;
+		padding: 0px;
 	}
 
 	.iconosIndex{
@@ -463,6 +468,7 @@ $contactos: (
 	.fotosDeLaSeccionDelIndex{
 		visibility: hidden;
 		display: none;
+		padding: 0px;
 	}  
 
 	.contenedor {
@@ -472,15 +478,14 @@ $contactos: (
 	}
 	
 	.recuadroDeNosotros__img {
-		width: 100px;
-		height: 80px;
+		width: 200px;
+		height: 130px;
 		padding: 0px;
 	}
 	
 	.recuadroDeNosotros__video {
-		width: 200px;
-		height: 100px;
-		padding: 0px;
+		visibility: hidden;
+		display: none;
 	}
 
 	.recuadroDeNosotros__parrafo {
@@ -543,6 +548,10 @@ $contactos: (
 		width: 150px;
 		height: 150px;
 		padding: 5px;
+	}
+
+	.inlineBlockPadre{
+		padding-bottom: 0px;
 	}
 
 	.inlineBlockHijo{
