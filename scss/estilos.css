@@ -522,6 +522,13 @@ iframe {
   width: 60%;
 }
 
+/*responsive grids en pantallas de entre 780px a 980px*/
+@media screen and (min-width: 780px) and (max-width: 980px) {
+  #grilla {
+    margin: 0px;
+  }
+}
+
 /*responsive en pantallas de entre 480px a 780px*/
 @media screen and (min-width: 480px) and (max-width: 780px) {
   h1 {
@@ -666,8 +673,8 @@ iframe {
     margin: 0px;
   }
   .recuadroDeNosotros__img {
-    width: 200px;
-    height: 130px;
+    width: 185px;
+    height: 125px;
     padding: 0px;
   }
   .recuadroDeNosotros__video {
